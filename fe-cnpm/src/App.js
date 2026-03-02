@@ -8,6 +8,7 @@ import * as UserService from './services/UserService'
 import { useDispatch, useSelector } from 'react-redux'
 import { resetUser, updateUser } from './redux/slides/userSlide'
 import Loading from './components/LoadingComponent/Loading'
+import SocialChatComponent from './components/SocialChatComponent/SocialChatComponent'
 
 function App() {
   const dispatch = useDispatch();
@@ -79,6 +80,7 @@ function App() {
             })}
           </Routes>
         </Router>
+        <SocialChatComponent />
       </Loading>
     </div>
   )

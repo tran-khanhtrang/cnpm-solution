@@ -1,6 +1,7 @@
 import { Badge, Button, Col, Popover } from 'antd'
 import React from 'react'
-import { WrapperContentPopup, WrapperHeader, WrapperHeaderAccout, WrapperTextHeader, WrapperTextHeaderSmall } from './style'
+import { WrapperContentPopup, WrapperHeader, WrapperHeaderAccout, WrapperLogo, WrapperSlogan, WrapperTextContainer, WrapperTextHeader, WrapperTextHeaderSmall } from './style'
+import logo from '../../assets/images/logo.jpg'
 import {
   UserOutlined,
   CaretDownOutlined,
@@ -23,7 +24,7 @@ const HeaderComponent = ({ isHiddenSearch = false, isHiddenCart = false }) => {
   const dispatch = useDispatch()
   const [userName, setUserName] = useState('')
   const [userAvatar, setUserAvatar] = useState('')
-  const [search,setSearch] = useState('')
+  const [search, setSearch] = useState('')
   const [isOpenPopup, setIsOpenPopup] = useState(false)
   const order = useSelector((state) => state.order)
   const [loading, setLoading] = useState(false)
@@ -58,17 +59,18 @@ const HeaderComponent = ({ isHiddenSearch = false, isHiddenCart = false }) => {
   );
 
   const handleClickNavigate = (type) => {
-    if(type === 'profile') {
+    if (type === 'profile') {
       navigate('/profile-user')
-    }else if(type === 'admin') {
+    } else if (type === 'admin') {
       navigate('/system/admin')
-    }else if(type === 'my-order') {
-      navigate('/my-order',{ state : {
+    } else if (type === 'my-order') {
+      navigate('/my-order', {
+        state: {
           id: user?.id,
-          token : user?.access_token
+          token: user?.access_token
         }
       })
-    }else {
+    } else {
       handleLogout()
     }
     setIsOpenPopup(false)
@@ -80,13 +82,17 @@ const HeaderComponent = ({ isHiddenSearch = false, isHiddenCart = false }) => {
   }
 
   return (
-    <div style={{  heiht: '100%', width: '100%', display: 'flex',background: '#9255FD', justifyContent: 'center' }}>
+    <div style={{ heiht: '100%', width: '100%', display: 'flex', background: '#9255FD', justifyContent: 'center' }}>
       <WrapperHeader style={{ justifyContent: isHiddenSearch && isHiddenSearch ? 'space-between' : 'unset' }}>
-        <Col span={5}>
-          <WrapperTextHeader to='/'>ComputerShop</WrapperTextHeader>
+        <Col span={7} style={{ display: 'flex', alignItems: 'center' }}>
+          <WrapperLogo src={logo} alt="logo Thủy Lợi shop" onClick={() => navigate('/')} style={{ cursor: 'pointer' }} />
+          <WrapperTextContainer>
+            <WrapperTextHeader to='/'>Thủy Lợi shop</WrapperTextHeader>
+            <WrapperSlogan>Tiện ích & Linh hoạt như dòng chảy</WrapperSlogan>
+          </WrapperTextContainer>
         </Col>
         {!isHiddenSearch && (
-          <Col span={11}>
+          <Col span={9}>
             <ButttonInputSearch
               size="large"
               bordered={false}
@@ -97,7 +103,7 @@ const HeaderComponent = ({ isHiddenSearch = false, isHiddenCart = false }) => {
             />
           </Col>
         )}
-        <Col span={8} style={{ display: 'flex', gap: '54px', alignItems: 'center' , marginLeft:'40px' }}>
+        <Col span={8} style={{ display: 'flex', gap: '54px', alignItems: 'center', marginLeft: '40px' }}>
           <Loading isLoading={loading}>
             <WrapperHeaderAccout>
               {userAvatar ? (
@@ -113,7 +119,7 @@ const HeaderComponent = ({ isHiddenSearch = false, isHiddenCart = false }) => {
               {user?.email ? (
                 <>
                   <Popover content={content} trigger="click" open={isOpenPopup}>
-                    <div style={{ cursor: 'pointer',maxWidth: 120, overflow: 'hidden', textWrap:'nowrap' }} onClick={() => setIsOpenPopup((prev) => !prev)}>{userName?.length ? userName : user?.email}</div>
+                    <div style={{ cursor: 'pointer', maxWidth: 120, overflow: 'hidden', textWrap: 'nowrap' }} onClick={() => setIsOpenPopup((prev) => !prev)}>{userName?.length ? userName : user?.email}</div>
                   </Popover>
                 </>
               ) : (
@@ -128,7 +134,7 @@ const HeaderComponent = ({ isHiddenSearch = false, isHiddenCart = false }) => {
             </WrapperHeaderAccout>
           </Loading>
           {!isHiddenCart && (
-            <div onClick={() => navigate('/order')} style={{cursor: 'pointer' , display:'flex' , alignItems:'center' , gap: '8px'}}>
+            <div onClick={() => navigate('/order')} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <Badge count={order?.orderItems?.length} size="small">
                 <ShoppingCartOutlined style={{ fontSize: '30px', color: '#fff' }} />
               </Badge>

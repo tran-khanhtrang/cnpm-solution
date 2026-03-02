@@ -12,14 +12,40 @@ export const WrapperHeader = styled(Row)`
 `
 
 export const WrapperTextHeader = styled(Link)`
-    font-size: 18px;
+    font-size: 26px;
     color: #fff;
     font-weight: bold;
     text-align: left;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
     &:hover {
-        font-size: 18px;
         color: #fff;
     }
+`
+
+export const WrapperLogo = styled.img`
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #fff;
+    padding: 2px;
+`
+
+export const WrapperTextContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+`
+
+export const WrapperSlogan = styled.span`
+    font-size: 13px;
+    color: #e0e0e0;
+    font-style: italic;
+    white-space: nowrap;
+    margin-top: 4px;
+    font-weight: 300;
 `
 
 export const WrapperHeaderAccout = styled.div`
