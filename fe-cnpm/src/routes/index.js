@@ -12,8 +12,14 @@ import ProfilePage from "../pages/Profile/ProfilePage";
 import SignInPage from "../pages/SignInPage/SignInPage";
 import SignUpPage from "../pages/SignUpPage/SignUpPage";
 import TypeProductPage from "../pages/TypeProductPage/TypeProductPage";
+import AboutPage from "../pages/AboutPage/AboutPage";
 
 export const routes = [
+    {
+        path: '/about',
+        page: AboutPage,
+        isShowHeader: false
+    },
     {
         path: '/',
         page: HomePage,

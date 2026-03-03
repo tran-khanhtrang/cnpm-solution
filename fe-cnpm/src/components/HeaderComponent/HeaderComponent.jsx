@@ -85,9 +85,9 @@ const HeaderComponent = ({ isHiddenSearch = false, isHiddenCart = false }) => {
     <div style={{ heiht: '100%', width: '100%', display: 'flex', background: '#9255FD', justifyContent: 'center' }}>
       <WrapperHeader style={{ justifyContent: isHiddenSearch && isHiddenSearch ? 'space-between' : 'unset' }}>
         <Col span={7} style={{ display: 'flex', alignItems: 'center' }}>
-          <WrapperLogo src={logo} alt="logo Thủy Lợi shop" onClick={() => navigate('/')} style={{ cursor: 'pointer' }} />
+          <WrapperLogo src={logo} alt="logo Thủy Lợi N5" onClick={() => navigate('/about')} style={{ cursor: 'pointer' }} />
           <WrapperTextContainer>
-            <WrapperTextHeader to='/'>Thủy Lợi shop</WrapperTextHeader>
+            <WrapperTextHeader onClick={() => navigate('/about')} style={{ cursor: 'pointer' }}>Thủy Lợi N5</WrapperTextHeader>
             <WrapperSlogan>Tiện ích & Linh hoạt như dòng chảy</WrapperSlogan>
           </WrapperTextContainer>
         </Col>
