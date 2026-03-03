@@ -1,15 +1,41 @@
 import { Checkbox, Col, Rate, Row } from 'antd'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { WrapperContent, WrapperLableText, WrapperTextPrice, WrapperTextValue } from './style'
+import * as ProductService from '../../services/ProductService'
+import { useNavigate } from 'react-router-dom'
 
 const NavBarComponent = () => {
+    const navigate = useNavigate()
+    const [typeProducts, setTypeProducts] = useState([])
+
+    const fetchAllTypeProduct = async () => {
+        const res = await ProductService.getAllTypeProduct()
+        if (res?.status === 'OK') {
+            setTypeProducts(res?.data)
+        }
+    }
+
+    useEffect(() => {
+        fetchAllTypeProduct()
+    }, [])
+
+    const handleNavigateType = (type) => {
+        navigate(`/product/${type.normalize('NFD').replace(/[\u0300-\u036f]/g, '')?.replace(/ /g, '_')}`, { state: type })
+    }
+
     const onChange = () => { }
     const renderContent = (type, options) => {
         switch (type) {
             case 'text':
-                return options.map((option) => {
+                return options.map((option, index) => {
                     return (
-                        <WrapperTextValue>{option}</WrapperTextValue>
+                        <WrapperTextValue
+                            key={index}
+                            onClick={() => handleNavigateType(option)}
+                            style={{ cursor: 'pointer', display: 'block' }}
+                        >
+                            {option}
+                        </WrapperTextValue>
                     )
                 })
             case 'checkbox':
@@ -44,9 +70,9 @@ const NavBarComponent = () => {
 
     return (
         <div>
-            <WrapperLableText>Lable</WrapperLableText>
+            <WrapperLableText>Danh Mục Sản Phẩm</WrapperLableText>
             <WrapperContent>
-                {renderContent('text', ['CPU', 'Mainboard', 'RAM'])}
+                {typeProducts.length > 0 ? renderContent('text', typeProducts) : <span>Đang tải...</span>}
             </WrapperContent>
         </div>
     )
