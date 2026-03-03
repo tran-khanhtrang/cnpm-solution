@@ -8,7 +8,8 @@ const userSchema = new mongoose.Schema(
         phone: { type: Number },
         address: { type: String },
         avatar: { type: String },
-        city: {type: String}
+        city: { type: String },
+        memberLevel: { type: String, enum: ['Đồng', 'Bạc', 'Vàng', 'Kim cương'], default: 'Đồng' }
     },
     {
         timestamps: true

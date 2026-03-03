@@ -6,7 +6,7 @@ import InputComponent from '../InputComponent/InputComponent'
 import DrawerComponent from '../DrawerComponent/DrawerComponent'
 import Loading from '../LoadingComponent/Loading'
 import ModalComponent from '../ModalComponent/ModalComponent'
-import { getBase64 } from '../../utils'
+import { getBase64, convertPrice } from '../../utils'
 import { useEffect } from 'react'
 import * as message from '../../components/Message/Message'
 import { useState } from 'react'
@@ -115,6 +115,7 @@ const AdminUser = () => {
 
   const queryClient = useQueryClient()
   const users = queryClient.getQueryData(['users'])
+  const orders = queryClient.getQueryData(['orders'])
   const isFetchingUser = useIsFetching(['users'])
   const renderAction = () => {
     return (
@@ -248,13 +249,53 @@ const AdminUser = () => {
       ...getColumnSearchProps('phone')
     },
     {
+      title: 'Hạng khách hàng',
+      dataIndex: 'memberLevel',
+      filters: [
+        { text: 'Đồng', value: 'Đồng' },
+        { text: 'Bạc', value: 'Bạc' },
+        { text: 'Vàng', value: 'Vàng' },
+        { text: 'Kim cương', value: 'Kim cương' }
+      ],
+      onFilter: (value, record) => record.memberLevel === value,
+    },
+    {
+      title: 'Số đơn thành công',
+      dataIndex: 'successfulOrders',
+      sorter: (a, b) => a.successfulOrders - b.successfulOrders,
+    },
+    {
+      title: 'Tổng tiền thanh toán',
+      dataIndex: 'totalSpent',
+      sorter: (a, b) => a.totalSpentRaw - b.totalSpentRaw,
+    },
+    {
       title: 'Action',
       dataIndex: 'action',
       render: renderAction
     },
   ];
   const dataTable = users?.data?.length > 0 && users?.data?.map((user) => {
-    return { ...user, key: user._id, isAdmin: user.isAdmin ? 'TRUE' : 'FALSE' }
+    let successfulOrders = 0;
+    let totalSpentRaw = 0;
+    if (orders?.data) {
+      orders.data.forEach(order => {
+        const orderUserId = order.user?._id || order.user;
+        if (orderUserId === user._id && order.isPaid) {
+          successfulOrders += 1;
+          totalSpentRaw += order.totalPrice || 0;
+        }
+      });
+    }
+
+    return {
+      ...user,
+      key: user._id,
+      isAdmin: user.isAdmin ? 'TRUE' : 'FALSE',
+      successfulOrders,
+      totalSpentRaw,
+      totalSpent: convertPrice(totalSpentRaw) || '0 VND'
+    }
   })
 
   useEffect(() => {

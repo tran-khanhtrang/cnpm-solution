@@ -55,9 +55,9 @@ const RevenueChart = ({ data }) => {
     };
 
     return (
-        <div style={{ width: '100%', height: 350 }}>
+        <div style={{ width: '100%', height: 260 }}>
             <div style={{ marginBottom: '10px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <h3 style={{ margin: 0 }}>Biểu đồ doanh thu</h3>
+                <h3 style={{ margin: 0, fontSize: '16px' }}>Biểu đồ doanh thu</h3>
                 <Select value={filter} onChange={setFilter} style={{ width: 140 }}>
                     <Option value="day">Theo ngày</Option>
                     <Option value="week">Theo tuần</Option>

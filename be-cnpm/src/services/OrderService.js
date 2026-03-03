@@ -1,5 +1,6 @@
 const Order = require("../models/OrderProduct")
 const Product = require("../models/ProductModel")
+const User = require("../models/UserModel")
 const EmailService = require("../services/EmailService")
 
 const createOrder = (newOrder) => {
@@ -61,6 +62,19 @@ const createOrder = (newOrder) => {
                     isPaid, paidAt
                 })
                 if (createdOrder) {
+                    try {
+                        const userOrders = await Order.find({ user: user, isPaid: true });
+                        let totalSpent = 0;
+                        userOrders.forEach(o => totalSpent += o.totalPrice);
+                        let memberLevel = 'Đồng';
+                        if (totalSpent >= 100000000) memberLevel = 'Kim cương';
+                        else if (totalSpent >= 50000000) memberLevel = 'Vàng';
+                        else if (totalSpent >= 20000000) memberLevel = 'Bạc';
+                        await User.findByIdAndUpdate(user, { memberLevel });
+                    } catch (e) {
+                        console.log('Error updating member level:', e)
+                    }
+
                     try {
                         await EmailService.sendEmailCreateOrder(email, orderItems)
                     } catch (e) {
