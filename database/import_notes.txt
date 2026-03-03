@@ -1,0 +1,33 @@
+# Hướng dẫn Import dữ liệu MongoDB (Di trú giải pháp)
+
+Do hệ thống sử dụng MongoDB (NoSQL), dữ liệu được export ở định dạng JSON (EJSON) thay vì các lệnh DDL/SQL. 
+Toàn bộ dữ liệu của hệ thống đã được export thành công ra thư mục `exported_data/` gồm:
+- `products.json`
+- `users.json`
+- `orders.json`
+
+## Các bước để import dữ liệu trên một PC khác:
+
+Yêu cầu kiên quyết trên máy mới: 
+- Đã cài đặt Node.js
+- Đã cài đặt và đang chạy MongoDB Server (mặc định ở port 27017)
+
+### Bước 1: Mở Terminal/Command Prompt trong thư mục `database` này
+
+### Bước 2: Cài đặt các thư viện cần thiết cho việc import
+Chạy lệnh sau để tải các package mongodb và bson dựa vào file package.json đã tạo:
+```bash
+npm install
+```
+
+### Bước 3: Chạy script import dữ liệu vào MongoDB
+Chạy 1 trong 2 lệnh sau:
+```bash
+npm run import
+```
+*(hoặc chạy lệnh: `node import.js`)*
+
+Script sẽ tự động đọc các file trong thư mục `exported_data/` và insert toàn bộ vào Database `ecommerce` trên MongoDB cục bộ của bạn, giữ nguyên các kiểu dữ liệu đặc biệt như ObjectId hay Date.
+
+**Lưu ý:**
+- Nếu MongoDB trên máy mới sử dụng cấu hình (port, tên DB, username/password) khác với mặc định, hãy mở file `import.js` và chỉnh sửa biến `url` và `dbName` cho phù hợp trước khi chạy.

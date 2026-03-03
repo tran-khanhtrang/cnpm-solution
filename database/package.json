@@ -1,0 +1,13 @@
+{
+  "name": "ecommerce-db-migrator",
+  "version": "1.0.0",
+  "description": "Database migration scripts for Ecommerce baseline",
+  "main": "import.js",
+  "scripts": {
+    "import": "node import.js"
+  },
+  "dependencies": {
+    "mongodb": "^6.0.0",
+    "bson": "^6.0.0"
+  }
+}

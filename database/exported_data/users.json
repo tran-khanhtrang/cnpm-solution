@@ -1,0 +1,421 @@
+[
+  {
+    "_id": {
+      "$oid": "69a51ff8f295bce04cf7fe1f"
+    },
+    "name": "Admin",
+    "email": "admin@gmail.com",
+    "password": "$2b$10$9OvQO7yDocQxr.nVp8HHEuHOp8jADJEUVLTTAkgN6b6WsmFmWxHbi",
+    "isAdmin": true,
+    "phone": 123456789,
+    "address": "Hà Nội",
+    "city": "Hà Nội",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-02T05:28:24.777Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-02T05:28:24.777Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c808"
+    },
+    "name": "Phan Mạnh Chung",
+    "email": "khachhang1@gmail.com",
+    "password": "$2b$10$i68TaROmhqxX5Y4W2Rbcp.Y4eAKITidYFga9jDFzyGGW2QxguDyK.",
+    "isAdmin": false,
+    "phone": 425510160,
+    "address": "Đường số 1, Phường 9, Hồ Chí Minh",
+    "city": "Hồ Chí Minh",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.482Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.170Z"
+    },
+    "memberLevel": "Đồng"
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c809"
+    },
+    "name": "Lê Thị Thu Hà",
+    "email": "khachhang2@gmail.com",
+    "password": "$2b$10$nmcwNXWFJqRMFWM.2X0zR.1FzXaAANBZOh2SKDuKggN4TLzJY4u9q",
+    "isAdmin": false,
+    "phone": 883007445,
+    "address": "Đường số 2, Phường 7, Hà Nội",
+    "city": "Hà Nội",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.482Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.178Z"
+    },
+    "memberLevel": "Bạc"
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c80a"
+    },
+    "name": "Nguyễn Đức Hạnh",
+    "email": "khachhang3@gmail.com",
+    "password": "$2b$10$yTP1a9IvmqRsT/bA0U8zhusiKvtIJkfLX0yG0AoJ3TtOGYWcOUbXe",
+    "isAdmin": false,
+    "phone": 201822264,
+    "address": "Đường số 3, Phường 3, Đà Nẵng",
+    "city": "Đà Nẵng",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.482Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.183Z"
+    },
+    "memberLevel": "Kim cương"
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c80b"
+    },
+    "name": "Nguyễn Minh Hiệp",
+    "email": "khachhang4@gmail.com",
+    "password": "$2b$10$TvnrE2VPhwbfAoHK45Y/vuSE5ZXjvalO2prJELQ0Q9bk8Rd4JhXj6",
+    "isAdmin": false,
+    "phone": 258651558,
+    "address": "Đường số 4, Phường 4, Hà Nội",
+    "city": "Hà Nội",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.482Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.186Z"
+    },
+    "memberLevel": "Kim cương"
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c80c"
+    },
+    "name": "Ngô Hữu Huy",
+    "email": "khachhang5@gmail.com",
+    "password": "$2b$10$uJ6rDSRnzMVkOTut9Co4NuRVgVfxfbxgKjl4u0Ez5QtKWOAK6qz7W",
+    "isAdmin": false,
+    "phone": 512011208,
+    "address": "Đường số 5, Phường 10, Đà Nẵng",
+    "city": "Đà Nẵng",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.482Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.188Z"
+    },
+    "memberLevel": "Kim cương"
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c80d"
+    },
+    "name": "Lê Ngọc Huyền",
+    "email": "khachhang6@gmail.com",
+    "password": "$2b$10$tCtt8boLnY2Rcbejssqde./6yjCHJ7naO61P/U5i9JLCX50d7c6XC",
+    "isAdmin": false,
+    "phone": 337730281,
+    "address": "Đường số 6, Phường 8, Hà Nội",
+    "city": "Hà Nội",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.482Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.191Z"
+    },
+    "memberLevel": "Vàng"
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c80e"
+    },
+    "name": "Trần Đăng Khoa",
+    "email": "khachhang7@gmail.com",
+    "password": "$2b$10$5qzQFy9Qev34..1XEyFyv.IZsqRWqw32zzcQ5KnuUpxWN/gySNlhe",
+    "isAdmin": false,
+    "phone": 553159515,
+    "address": "Đường số 7, Phường 10, Cần Thơ",
+    "city": "Cần Thơ",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.482Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.194Z"
+    },
+    "memberLevel": "Kim cương"
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c80f"
+    },
+    "name": "Đinh Văn Linh",
+    "email": "khachhang8@gmail.com",
+    "password": "$2b$10$lV/Bvdudl4qtwkLbwAx1y.C6MgcgwiU6SLE1DdCVHpUBB6Y.RUx8.",
+    "isAdmin": false,
+    "phone": 831156778,
+    "address": "Đường số 8, Phường 3, Đà Nẵng",
+    "city": "Đà Nẵng",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.482Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.197Z"
+    },
+    "memberLevel": "Vàng"
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c810"
+    },
+    "name": "Nguyễn Lê Nguyên",
+    "email": "khachhang9@gmail.com",
+    "password": "$2b$10$C8HcRKjW2l8vNPe370AP..jpOe45/xe3MXXG/uAGHGfKnz9D//bSq",
+    "isAdmin": false,
+    "phone": 695948253,
+    "address": "Đường số 9, Phường 7, Nha Trang",
+    "city": "Nha Trang",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.483Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.199Z"
+    },
+    "memberLevel": "Đồng"
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c811"
+    },
+    "name": "Nguyễn Thảo Nguyên",
+    "email": "khachhang10@gmail.com",
+    "password": "$2b$10$A7coW5ySzgIQTPfryST4CuayCCByw6qfzstrJRW2aF6CqLUfhjmOC",
+    "isAdmin": false,
+    "phone": 403632319,
+    "address": "Đường số 10, Phường 6, Đà Nẵng",
+    "city": "Đà Nẵng",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.483Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.201Z"
+    },
+    "memberLevel": "Kim cương"
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c812"
+    },
+    "name": "Nguyễn Thuỳ Ninh",
+    "email": "khachhang11@gmail.com",
+    "password": "$2b$10$indGQFK/ZwT95U4Gd4otJu0W1dGHn7ZTzSuLReEzqLWeSc67k2JyW",
+    "isAdmin": false,
+    "phone": 801956087,
+    "address": "Đường số 11, Phường 2, Đà Nẵng",
+    "city": "Đà Nẵng",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.483Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.203Z"
+    },
+    "memberLevel": "Đồng"
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c813"
+    },
+    "name": "Vũ Ngọc Phan",
+    "email": "khachhang12@gmail.com",
+    "password": "$2b$10$buBXHBbM8op6s9RsTmq.JeCSZurYOTSx2D/94Wju8Zd7WqjpQXU8m",
+    "isAdmin": false,
+    "phone": 893801674,
+    "address": "Đường số 12, Phường 8, Hà Nội",
+    "city": "Hà Nội",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.483Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.206Z"
+    },
+    "memberLevel": "Kim cương"
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c814"
+    },
+    "name": "Tạ Minh Quang",
+    "email": "khachhang13@gmail.com",
+    "password": "$2b$10$qOJ64owdrqarbvqp6RyfnOLobWYKV.ucvtEAwtTgq9OECDL5lj0lK",
+    "isAdmin": false,
+    "phone": 230296235,
+    "address": "Đường số 13, Phường 9, Nha Trang",
+    "city": "Nha Trang",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.483Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.209Z"
+    },
+    "memberLevel": "Kim cương"
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c815"
+    },
+    "name": "Vũ Đức Thắng",
+    "email": "khachhang14@gmail.com",
+    "password": "$2b$10$DcJsnCGwK13Te9F8VDSRw.lavvLNOxDb9GU0YxD.WZNac3pcmjDE6",
+    "isAdmin": false,
+    "phone": 554590067,
+    "address": "Đường số 14, Phường 3, Hà Nội",
+    "city": "Hà Nội",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.483Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.211Z"
+    },
+    "memberLevel": "Vàng"
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c816"
+    },
+    "name": "Bùi Thanh Thủy",
+    "email": "khachhang15@gmail.com",
+    "password": "$2b$10$SiAOx8xOvBNVFrXdGCN19Oc.oyMc7Ud0Pqd5ttkywfYQcMkdRO0c2",
+    "isAdmin": false,
+    "phone": 265739067,
+    "address": "Đường số 15, Phường 7, Đà Nẵng",
+    "city": "Đà Nẵng",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.483Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.213Z"
+    },
+    "memberLevel": "Đồng"
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c817"
+    },
+    "name": "Phạm Thị Thanh Thủy",
+    "email": "khachhang16@gmail.com",
+    "password": "$2b$10$33iSz8a2zB57dgxOWxjUzuI0ghorTqMEn9IXR2hv6EFERwn2LQjbW",
+    "isAdmin": false,
+    "phone": 307624241,
+    "address": "Đường số 16, Phường 7, Hà Nội",
+    "city": "Hà Nội",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.483Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.216Z"
+    },
+    "memberLevel": "Đồng"
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c818"
+    },
+    "name": "Nguyễn Thương",
+    "email": "khachhang17@gmail.com",
+    "password": "$2b$10$H2.5ucO9.Cn9T03stAT4Ou0RD68YcFq8SORGhpfcTTJ7K1vybkp4K",
+    "isAdmin": false,
+    "phone": 157247584,
+    "address": "Đường số 17, Phường 6, Nha Trang",
+    "city": "Nha Trang",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.483Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.217Z"
+    },
+    "memberLevel": "Đồng"
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c819"
+    },
+    "name": "Phùng Khắc Toàn",
+    "email": "khachhang18@gmail.com",
+    "password": "$2b$10$G.FkJCZycT/IX3g8/U/r/OWnfghQYO5uKb2Ff1YjarOCfkX4bV/LG",
+    "isAdmin": false,
+    "phone": 243737679,
+    "address": "Đường số 18, Phường 4, Đà Nẵng",
+    "city": "Đà Nẵng",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.483Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.219Z"
+    },
+    "memberLevel": "Kim cương"
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c81a"
+    },
+    "name": "Trần Khánh Trang",
+    "email": "khachhang19@gmail.com",
+    "password": "$2b$10$Oci4swzsFkc9Vb9ESvxFEeBEKpBrpxi7Zq90WYgR.suAj2IMAmi9y",
+    "isAdmin": false,
+    "phone": 290849932,
+    "address": "Đường số 19, Phường 8, Nha Trang",
+    "city": "Nha Trang",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.483Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.221Z"
+    },
+    "memberLevel": "Bạc"
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c81b"
+    },
+    "name": "Nguyễn Thanh Tùng",
+    "email": "khachhang20@gmail.com",
+    "password": "$2b$10$t2v6tt/Do1xodPxjLYYOE.V1uaoHAXpfAT1gAEH/T7Sy45sGMpWma",
+    "isAdmin": false,
+    "phone": 220491271,
+    "address": "Đường số 20, Phường 8, Hà Nội",
+    "city": "Hà Nội",
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-03T02:18:12.483Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:39:32.223Z"
+    },
+    "memberLevel": "Đồng"
+  }
+]

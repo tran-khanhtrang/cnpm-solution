@@ -1,0 +1,3192 @@
+[
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c81e"
+    },
+    "orderItems": [
+      {
+        "name": "MÁY TÍNH BẢNG SAMSUNG ROG 898",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/tablet?lock=64",
+        "price": 21991000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daef8"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c81f"
+        }
+      },
+      {
+        "name": "BÀN PHÍM LENOVO Max 218",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/keyboard?lock=41",
+        "price": 2304000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daee1"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c820"
+        }
+      },
+      {
+        "name": "LOA LENOVO TUF 387",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/speaker?lock=21",
+        "price": 4187000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daecd"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c821"
+        }
+      },
+      {
+        "name": "MÀN HÌNH GIGABYTE Ultra 699",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/monitor?lock=92",
+        "price": 5142000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf14"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c822"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Vũ Đức Thắng",
+      "address": "Đường số 14, Phường 3, Hà Nội",
+      "city": "Hà Nội",
+      "phone": 554590067
+    },
+    "paymentMethod": "later_money",
+    "itemsPrice": 98568000,
+    "shippingPrice": 0,
+    "totalPrice": 98568000,
+    "user": {
+      "$oid": "69a644e462d002062452c815"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-02-07T12:26:21.842Z"
+    },
+    "isDelivered": true,
+    "deliveredAt": {
+      "$date": "2026-02-09T11:14:44.115Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-07T07:17:04.827Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.451Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c823"
+    },
+    "orderItems": [
+      {
+        "name": "LAPTOP CORSAIR Mini 784",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/laptop?lock=34",
+        "price": 52374000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daeda"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c824"
+        }
+      },
+      {
+        "name": "ĐIỆN THOẠI ASUS Elite 865",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/smartphone?lock=13",
+        "price": 24535000,
+        "discount": 11,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daec5"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c825"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Vũ Ngọc Phan",
+      "address": "Đường số 12, Phường 8, Hà Nội",
+      "city": "Hà Nội",
+      "phone": 893801674
+    },
+    "paymentMethod": "later_money",
+    "itemsPrice": 206192000,
+    "shippingPrice": 0,
+    "totalPrice": 206192000,
+    "user": {
+      "$oid": "69a644e462d002062452c813"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-02-09T23:49:03.720Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-09T13:09:14.716Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.447Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c826"
+    },
+    "orderItems": [
+      {
+        "name": "LAPTOP CORSAIR Mini 784",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/laptop?lock=34",
+        "price": 52374000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daeda"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c827"
+        }
+      },
+      {
+        "name": "LAPTOP HP Gaming 881",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/laptop?lock=77",
+        "price": 44245000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf05"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c828"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Lê Thị Thu Hà",
+      "address": "Đường số 2, Phường 7, Hà Nội",
+      "city": "Hà Nội",
+      "phone": 883007445
+    },
+    "paymentMethod": "momo",
+    "itemsPrice": 148993000,
+    "shippingPrice": 0,
+    "totalPrice": 148993000,
+    "user": {
+      "$oid": "69a644e462d002062452c809"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-20T03:35:26.196Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.411Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c829"
+    },
+    "orderItems": [
+      {
+        "name": "MÁY TÍNH BẢNG AKKO Gaming 157",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/tablet?lock=7",
+        "price": 19863000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daebf"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c82a"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Phạm Thị Thanh Thủy",
+      "address": "Đường số 16, Phường 7, Hà Nội",
+      "city": "Hà Nội",
+      "phone": 307624241
+    },
+    "paymentMethod": "paypal",
+    "itemsPrice": 19863000,
+    "shippingPrice": 0,
+    "totalPrice": 19863000,
+    "user": {
+      "$oid": "69a644e462d002062452c817"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-02-17T11:56:14.815Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-16T20:41:15.053Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.454Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c82b"
+    },
+    "orderItems": [
+      {
+        "name": "BÀN PHÍM SENNHEISER Plus 552",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/keyboard?lock=36",
+        "price": 4121000,
+        "discount": 14,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daedc"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c82c"
+        }
+      },
+      {
+        "name": "PC CORSAIR Max 951",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/pc,computer?lock=42",
+        "price": 53233000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daee2"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c82d"
+        }
+      },
+      {
+        "name": "TAI NGHE SAMSUNG Max 258",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/headphone?lock=56",
+        "price": 2220000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daef0"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c82e"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Trần Đăng Khoa",
+      "address": "Đường số 7, Phường 10, Cần Thơ",
+      "city": "Cần Thơ",
+      "phone": 553159515
+    },
+    "paymentMethod": "bank_transfer",
+    "itemsPrice": 115027000,
+    "shippingPrice": 0,
+    "totalPrice": 115027000,
+    "user": {
+      "$oid": "69a644e462d002062452c80e"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-01-22T06:32:38.394Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-21T14:25:54.996Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.437Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c82f"
+    },
+    "orderItems": [
+      {
+        "name": "LAPTOP LG Mini 269",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/laptop?lock=23",
+        "price": 35738000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daecf"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c830"
+        }
+      },
+      {
+        "name": "BÀN PHÍM LENOVO Mini 662",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/keyboard?lock=66",
+        "price": 1571000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daefa"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c831"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Trần Đăng Khoa",
+      "address": "Đường số 7, Phường 10, Cần Thơ",
+      "city": "Cần Thơ",
+      "phone": 553159515
+    },
+    "paymentMethod": "momo",
+    "itemsPrice": 38880000,
+    "shippingPrice": 0,
+    "totalPrice": 38880000,
+    "user": {
+      "$oid": "69a644e462d002062452c80e"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": true,
+    "deliveredAt": {
+      "$date": "2026-02-12T21:33:24.849Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-09T03:50:49.375Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.437Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c832"
+    },
+    "orderItems": [
+      {
+        "name": "LOA HP Gaming 619",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/speaker?lock=48",
+        "price": 11099000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daee8"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c833"
+        }
+      },
+      {
+        "name": "BÀN PHÍM SENNHEISER Plus 552",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/keyboard?lock=36",
+        "price": 4121000,
+        "discount": 14,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daedc"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c834"
+        }
+      },
+      {
+        "name": "MÁY TÍNH BẢNG LG Standard 1071",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/tablet?lock=11",
+        "price": 17647000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daec3"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c835"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Lê Ngọc Huyền",
+      "address": "Đường số 6, Phường 8, Hà Nội",
+      "city": "Hà Nội",
+      "phone": 337730281
+    },
+    "paymentMethod": "paypal",
+    "itemsPrice": 63307000,
+    "shippingPrice": 0,
+    "totalPrice": 63307000,
+    "user": {
+      "$oid": "69a644e462d002062452c80d"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-01-25T21:06:46.571Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-25T10:05:19.744Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.435Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c836"
+    },
+    "orderItems": [
+      {
+        "name": "ĐIỆN THOẠI ASUS Elite 865",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/smartphone?lock=13",
+        "price": 24535000,
+        "discount": 11,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daec5"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c837"
+        }
+      },
+      {
+        "name": "LAPTOP SAMSUNG Legendary 812",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/laptop?lock=71",
+        "price": 38877000,
+        "discount": 12,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daeff"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c838"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Nguyễn Thuỳ Ninh",
+      "address": "Đường số 11, Phường 2, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 801956087
+    },
+    "paymentMethod": "paypal",
+    "itemsPrice": 165701000,
+    "shippingPrice": 0,
+    "totalPrice": 165701000,
+    "user": {
+      "$oid": "69a644e462d002062452c812"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-04T18:02:25.831Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.446Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c839"
+    },
+    "orderItems": [
+      {
+        "name": "PHỤ KIỆN STEELSERIES Gaming 591",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/accessory?lock=86",
+        "price": 839000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf0e"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c83a"
+        }
+      },
+      {
+        "name": "MÀN HÌNH STEELSERIES Pro 586",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/monitor?lock=3",
+        "price": 6861000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daebb"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c83b"
+        }
+      },
+      {
+        "name": "LOA ASUS Slim 669",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/speaker?lock=94",
+        "price": 5506000,
+        "discount": 15,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf16"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c83c"
+        }
+      },
+      {
+        "name": "TAI NGHE HP Ultra 535",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/headphone?lock=25",
+        "price": 6957000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daed1"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c83d"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Lê Ngọc Huyền",
+      "address": "Đường số 6, Phường 8, Hà Nội",
+      "city": "Hà Nội",
+      "phone": 337730281
+    },
+    "paymentMethod": "later_money",
+    "itemsPrice": 34820000,
+    "shippingPrice": 0,
+    "totalPrice": 34820000,
+    "user": {
+      "$oid": "69a644e462d002062452c80d"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-02-06T14:22:09.745Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-06T03:07:11.893Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.435Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c83e"
+    },
+    "orderItems": [
+      {
+        "name": "MÀN HÌNH GIGABYTE Slim 985",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/monitor?lock=10",
+        "price": 10513000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daec2"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c83f"
+        }
+      },
+      {
+        "name": "MÀN HÌNH STEELSERIES Pro 862",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/monitor?lock=97",
+        "price": 9883000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf19"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c840"
+        }
+      },
+      {
+        "name": "LAPTOP SENNHEISER Legendary 275",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/laptop?lock=16",
+        "price": 45586000,
+        "discount": 19,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daec8"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c841"
+        }
+      },
+      {
+        "name": "PC GIGABYTE Standard 510",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/pc,computer?lock=90",
+        "price": 11610000,
+        "discount": 11,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf12"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c842"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Nguyễn Thảo Nguyên",
+      "address": "Đường số 10, Phường 6, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 403632319
+    },
+    "paymentMethod": "paypal",
+    "itemsPrice": 131091000,
+    "shippingPrice": 0,
+    "totalPrice": 131091000,
+    "user": {
+      "$oid": "69a644e462d002062452c811"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-02-01T20:03:50.115Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-31T22:05:53.065Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.444Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c843"
+    },
+    "orderItems": [
+      {
+        "name": "MÁY TÍNH BẢNG AKKO Gaming 157",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/tablet?lock=7",
+        "price": 19863000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daebf"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c844"
+        }
+      },
+      {
+        "name": "BÀN PHÍM SAMSUNG TUF 150",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/keyboard?lock=4",
+        "price": 2199000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daebc"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c845"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Trần Đăng Khoa",
+      "address": "Đường số 7, Phường 10, Cần Thơ",
+      "city": "Cần Thơ",
+      "phone": 553159515
+    },
+    "paymentMethod": "later_money",
+    "itemsPrice": 26460000,
+    "shippingPrice": 0,
+    "totalPrice": 26460000,
+    "user": {
+      "$oid": "69a644e462d002062452c80e"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-31T08:22:45.088Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.437Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c846"
+    },
+    "orderItems": [
+      {
+        "name": "MÀN HÌNH STEELSERIES Pro 862",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/monitor?lock=97",
+        "price": 9883000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf19"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c847"
+        }
+      },
+      {
+        "name": "TAI NGHE DELL Legendary 1080",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/headphone?lock=54",
+        "price": 5698000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daeee"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c848"
+        }
+      },
+      {
+        "name": "TAI NGHE SAMSUNG Max 258",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/headphone?lock=56",
+        "price": 2220000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daef0"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c849"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Nguyễn Thảo Nguyên",
+      "address": "Đường số 10, Phường 6, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 403632319
+    },
+    "paymentMethod": "bank_transfer",
+    "itemsPrice": 32124000,
+    "shippingPrice": 0,
+    "totalPrice": 32124000,
+    "user": {
+      "$oid": "69a644e462d002062452c811"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-16T15:21:05.589Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.444Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c84a"
+    },
+    "orderItems": [
+      {
+        "name": "PC SAMSUNG Mini 1058",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/pc,computer?lock=98",
+        "price": 72449000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf1a"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c84b"
+        }
+      },
+      {
+        "name": "PC HP Legendary 165",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/pc,computer?lock=32",
+        "price": 93651000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daed8"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c84c"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Đinh Văn Linh",
+      "address": "Đường số 8, Phường 3, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 831156778
+    },
+    "paymentMethod": "later_money",
+    "itemsPrice": 259751000,
+    "shippingPrice": 0,
+    "totalPrice": 259751000,
+    "user": {
+      "$oid": "69a644e462d002062452c80f"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-13T23:48:41.942Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.440Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c84d"
+    },
+    "orderItems": [
+      {
+        "name": "ĐIỆN THOẠI AKKO Plus 699",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/smartphone?lock=63",
+        "price": 33410000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daef7"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c84e"
+        }
+      },
+      {
+        "name": "LOA HYPERX Mini 1058",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/speaker?lock=89",
+        "price": 1527000,
+        "discount": 18,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf11"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c84f"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Phan Mạnh Chung",
+      "address": "Đường số 1, Phường 9, Hồ Chí Minh",
+      "city": "Hồ Chí Minh",
+      "phone": 425510160
+    },
+    "paymentMethod": "momo",
+    "itemsPrice": 101757000,
+    "shippingPrice": 0,
+    "totalPrice": 101757000,
+    "user": {
+      "$oid": "69a644e462d002062452c808"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": true,
+    "deliveredAt": {
+      "$date": "2026-02-17T18:25:44.849Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-13T16:56:13.430Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.380Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c850"
+    },
+    "orderItems": [
+      {
+        "name": "PC LOGITECH Pro 111",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/pc,computer?lock=28",
+        "price": 25729000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daed4"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c851"
+        }
+      },
+      {
+        "name": "MÁY TÍNH BẢNG SAMSUNG Pro 947",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/tablet?lock=74",
+        "price": 24679000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf02"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c852"
+        }
+      },
+      {
+        "name": "PHỤ KIỆN SONY Mini 603",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/accessory?lock=46",
+        "price": 1240000,
+        "discount": 11,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daee6"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c853"
+        }
+      },
+      {
+        "name": "MÀN HÌNH SONY Slim 912",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/monitor?lock=68",
+        "price": 15751000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daefc"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c854"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Ngô Hữu Huy",
+      "address": "Đường số 5, Phường 10, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 512011208
+    },
+    "paymentMethod": "later_money",
+    "itemsPrice": 120287000,
+    "shippingPrice": 0,
+    "totalPrice": 120287000,
+    "user": {
+      "$oid": "69a644e462d002062452c80c"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-11T13:07:23.234Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.432Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c855"
+    },
+    "orderItems": [
+      {
+        "name": "PHỤ KIỆN SONY Mini 603",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/accessory?lock=46",
+        "price": 1240000,
+        "discount": 11,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daee6"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c856"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Phan Mạnh Chung",
+      "address": "Đường số 1, Phường 9, Hồ Chí Minh",
+      "city": "Hồ Chí Minh",
+      "phone": 425510160
+    },
+    "paymentMethod": "bank_transfer",
+    "itemsPrice": 3720000,
+    "shippingPrice": 30000,
+    "totalPrice": 3750000,
+    "user": {
+      "$oid": "69a644e462d002062452c808"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-20T19:16:04.994Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.380Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c857"
+    },
+    "orderItems": [
+      {
+        "name": "MÀN HÌNH SENNHEISER TUF 308",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/monitor?lock=60",
+        "price": 19344000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daef4"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c858"
+        }
+      },
+      {
+        "name": "LOA DELL Pro 120",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/speaker?lock=47",
+        "price": 5781000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daee7"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c859"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Ngô Hữu Huy",
+      "address": "Đường số 5, Phường 10, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 512011208
+    },
+    "paymentMethod": "momo",
+    "itemsPrice": 36687000,
+    "shippingPrice": 0,
+    "totalPrice": 36687000,
+    "user": {
+      "$oid": "69a644e462d002062452c80c"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-01-05T01:55:23.212Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-05T01:35:45.332Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.432Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c85a"
+    },
+    "orderItems": [
+      {
+        "name": "TAI NGHE SONY Legendary 1068",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/headphone?lock=20",
+        "price": 3819000,
+        "discount": 17,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daecc"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c85b"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Trần Đăng Khoa",
+      "address": "Đường số 7, Phường 10, Cần Thơ",
+      "city": "Cần Thơ",
+      "phone": 553159515
+    },
+    "paymentMethod": "bank_transfer",
+    "itemsPrice": 7638000,
+    "shippingPrice": 0,
+    "totalPrice": 7638000,
+    "user": {
+      "$oid": "69a644e462d002062452c80e"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-04T20:55:22.682Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.437Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c85c"
+    },
+    "orderItems": [
+      {
+        "name": "PHỤ KIỆN ASUS Ultra 132",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/accessory?lock=24",
+        "price": 1799000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daed0"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c85d"
+        }
+      },
+      {
+        "name": "CHUỘT LG Ultra 355",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/mouse?lock=9",
+        "price": 1472000,
+        "discount": 12,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daec1"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c85e"
+        }
+      },
+      {
+        "name": "LOA HYPERX Slim 837",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/speaker?lock=79",
+        "price": 9969000,
+        "discount": 20,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf07"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c85f"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Nguyễn Đức Hạnh",
+      "address": "Đường số 3, Phường 3, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 201822264
+    },
+    "paymentMethod": "paypal",
+    "itemsPrice": 39720000,
+    "shippingPrice": 0,
+    "totalPrice": 39720000,
+    "user": {
+      "$oid": "69a644e462d002062452c80a"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-02-19T00:15:22.840Z"
+    },
+    "isDelivered": true,
+    "deliveredAt": {
+      "$date": "2026-02-20T02:48:56.735Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-18T16:08:27.775Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.415Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c860"
+    },
+    "orderItems": [
+      {
+        "name": "LOA LENOVO TUF 387",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/speaker?lock=21",
+        "price": 4187000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daecd"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c861"
+        }
+      },
+      {
+        "name": "PC LG Slim 451",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/pc,computer?lock=51",
+        "price": 53881000,
+        "discount": 14,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daeeb"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c862"
+        }
+      },
+      {
+        "name": "CHUỘT ASUS Standard 946",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/mouse?lock=50",
+        "price": 1677000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daeea"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c863"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Ngô Hữu Huy",
+      "address": "Đường số 5, Phường 10, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 512011208
+    },
+    "paymentMethod": "bank_transfer",
+    "itemsPrice": 67286000,
+    "shippingPrice": 0,
+    "totalPrice": 67286000,
+    "user": {
+      "$oid": "69a644e462d002062452c80c"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": true,
+    "deliveredAt": {
+      "$date": "2026-01-07T22:02:49.995Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-05T11:49:31.605Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.432Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c864"
+    },
+    "orderItems": [
+      {
+        "name": "TAI NGHE LOGITECH Standard 1018",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/headphone?lock=93",
+        "price": 2943000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf15"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c865"
+        }
+      },
+      {
+        "name": "PC SAMSUNG Gaming 566",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/pc,computer?lock=31",
+        "price": 27665000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daed7"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c866"
+        }
+      },
+      {
+        "name": "PHỤ KIỆN LOGITECH Plus 910",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/accessory?lock=0",
+        "price": 916000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daeb8"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c867"
+        }
+      },
+      {
+        "name": "MÀN HÌNH LG Legendary 1018",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/monitor?lock=83",
+        "price": 11945000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf0b"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c868"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Đinh Văn Linh",
+      "address": "Đường số 8, Phường 3, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 831156778
+    },
+    "paymentMethod": "paypal",
+    "itemsPrice": 75077000,
+    "shippingPrice": 0,
+    "totalPrice": 75077000,
+    "user": {
+      "$oid": "69a644e462d002062452c80f"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-01-27T01:46:38.514Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-26T15:38:59.364Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.440Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c869"
+    },
+    "orderItems": [
+      {
+        "name": "TAI NGHE CORSAIR Pro 923",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/headphone?lock=72",
+        "price": 1706000,
+        "discount": 15,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf00"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c86a"
+        }
+      },
+      {
+        "name": "LAPTOP HP Max 1026",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/laptop?lock=85",
+        "price": 17057000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf0d"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c86b"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Ngô Hữu Huy",
+      "address": "Đường số 5, Phường 10, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 512011208
+    },
+    "paymentMethod": "later_money",
+    "itemsPrice": 18763000,
+    "shippingPrice": 0,
+    "totalPrice": 18763000,
+    "user": {
+      "$oid": "69a644e462d002062452c80c"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-31T22:51:21.079Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.432Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c86c"
+    },
+    "orderItems": [
+      {
+        "name": "PHỤ KIỆN RAZER Elite 539",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/accessory?lock=84",
+        "price": 751000,
+        "discount": 11,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf0c"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c86d"
+        }
+      },
+      {
+        "name": "PC SAMSUNG Gaming 566",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/pc,computer?lock=31",
+        "price": 27665000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daed7"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c86e"
+        }
+      },
+      {
+        "name": "TAI NGHE CORSAIR Pro 923",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/headphone?lock=72",
+        "price": 1706000,
+        "discount": 15,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf00"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c86f"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Tạ Minh Quang",
+      "address": "Đường số 13, Phường 9, Nha Trang",
+      "city": "Nha Trang",
+      "phone": 230296235
+    },
+    "paymentMethod": "later_money",
+    "itemsPrice": 62701000,
+    "shippingPrice": 0,
+    "totalPrice": 62701000,
+    "user": {
+      "$oid": "69a644e462d002062452c814"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-01-16T05:31:04.858Z"
+    },
+    "isDelivered": true,
+    "deliveredAt": {
+      "$date": "2026-01-17T10:31:12.103Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-16T04:57:05.122Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.449Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c870"
+    },
+    "orderItems": [
+      {
+        "name": "MÁY TÍNH BẢNG SAMSUNG Pro 947",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/tablet?lock=74",
+        "price": 24679000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf02"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c871"
+        }
+      },
+      {
+        "name": "PHỤ KIỆN STEELSERIES Gaming 591",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/accessory?lock=86",
+        "price": 839000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf0e"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c872"
+        }
+      },
+      {
+        "name": "ĐIỆN THOẠI AKKO Pro 101",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/smartphone?lock=99",
+        "price": 27685000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf1b"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c873"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Phùng Khắc Toàn",
+      "address": "Đường số 18, Phường 4, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 243737679
+    },
+    "paymentMethod": "later_money",
+    "itemsPrice": 133252000,
+    "shippingPrice": 0,
+    "totalPrice": 133252000,
+    "user": {
+      "$oid": "69a644e462d002062452c819"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-01-27T05:04:18.912Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-26T08:59:44.425Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.457Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c874"
+    },
+    "orderItems": [
+      {
+        "name": "BÀN PHÍM APPLE Max 484",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/keyboard?lock=35",
+        "price": 4861000,
+        "discount": 19,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daedb"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c875"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Lê Thị Thu Hà",
+      "address": "Đường số 2, Phường 7, Hà Nội",
+      "city": "Hà Nội",
+      "phone": 883007445
+    },
+    "paymentMethod": "momo",
+    "itemsPrice": 4861000,
+    "shippingPrice": 30000,
+    "totalPrice": 4891000,
+    "user": {
+      "$oid": "69a644e462d002062452c809"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-01-21T22:39:38.028Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-21T03:57:19.236Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.411Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c876"
+    },
+    "orderItems": [
+      {
+        "name": "CHUỘT DELL Standard 699",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/mouse?lock=62",
+        "price": 1730000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daef6"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c877"
+        }
+      },
+      {
+        "name": "LOA HYPERX Mini 1058",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/speaker?lock=89",
+        "price": 1527000,
+        "discount": 18,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf11"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c878"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Nguyễn Thuỳ Ninh",
+      "address": "Đường số 11, Phường 2, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 801956087
+    },
+    "paymentMethod": "later_money",
+    "itemsPrice": 6311000,
+    "shippingPrice": 0,
+    "totalPrice": 6311000,
+    "user": {
+      "$oid": "69a644e462d002062452c812"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-02-17T08:57:14.292Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-17T02:25:40.929Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.446Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c879"
+    },
+    "orderItems": [
+      {
+        "name": "LAPTOP HYPERX Mini 698",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/laptop?lock=67",
+        "price": 35534000,
+        "discount": 23,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daefb"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c87a"
+        }
+      },
+      {
+        "name": "PHỤ KIỆN SONY Mini 603",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/accessory?lock=46",
+        "price": 1240000,
+        "discount": 11,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daee6"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c87b"
+        }
+      },
+      {
+        "name": "ĐIỆN THOẠI LG Ultra 275",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/smartphone?lock=55",
+        "price": 34396000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daeef"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c87c"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Phạm Thị Thanh Thủy",
+      "address": "Đường số 16, Phường 7, Hà Nội",
+      "city": "Hà Nội",
+      "phone": 307624241
+    },
+    "paymentMethod": "later_money",
+    "itemsPrice": 106806000,
+    "shippingPrice": 0,
+    "totalPrice": 106806000,
+    "user": {
+      "$oid": "69a644e462d002062452c817"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": true,
+    "deliveredAt": {
+      "$date": "2026-03-02T06:04:25.342Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-28T14:24:59.521Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.454Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c87d"
+    },
+    "orderItems": [
+      {
+        "name": "LOA HP Gaming 619",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/speaker?lock=48",
+        "price": 11099000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daee8"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c87e"
+        }
+      },
+      {
+        "name": "PC GIGABYTE Standard 510",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/pc,computer?lock=90",
+        "price": 11610000,
+        "discount": 11,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf12"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c87f"
+        }
+      },
+      {
+        "name": "MÀN HÌNH CORSAIR Slim 982",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/monitor?lock=80",
+        "price": 10461000,
+        "discount": 21,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf08"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c880"
+        }
+      },
+      {
+        "name": "TAI NGHE ACER Mini 355",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/headphone?lock=19",
+        "price": 7682000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daecb"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c881"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Ngô Hữu Huy",
+      "address": "Đường số 5, Phường 10, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 512011208
+    },
+    "paymentMethod": "bank_transfer",
+    "itemsPrice": 122556000,
+    "shippingPrice": 0,
+    "totalPrice": 122556000,
+    "user": {
+      "$oid": "69a644e462d002062452c80c"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-01-26T21:52:33.092Z"
+    },
+    "isDelivered": true,
+    "deliveredAt": {
+      "$date": "2026-01-28T12:28:49.448Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-26T09:51:25.889Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.432Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c882"
+    },
+    "orderItems": [
+      {
+        "name": "MÀN HÌNH GIGABYTE Ultra 699",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/monitor?lock=92",
+        "price": 5142000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf14"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c883"
+        }
+      },
+      {
+        "name": "BÀN PHÍM APPLE Max 484",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/keyboard?lock=35",
+        "price": 4861000,
+        "discount": 19,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daedb"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c884"
+        }
+      },
+      {
+        "name": "LOA LOGITECH Plus 100",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/speaker?lock=95",
+        "price": 12883000,
+        "discount": 16,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf17"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c885"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Trần Khánh Trang",
+      "address": "Đường số 19, Phường 8, Nha Trang",
+      "city": "Nha Trang",
+      "phone": 290849932
+    },
+    "paymentMethod": "bank_transfer",
+    "itemsPrice": 28028000,
+    "shippingPrice": 0,
+    "totalPrice": 28028000,
+    "user": {
+      "$oid": "69a644e462d002062452c81a"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-01-04T21:23:54.775Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-04T10:11:16.455Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.459Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c886"
+    },
+    "orderItems": [
+      {
+        "name": "MÁY TÍNH BẢNG SAMSUNG Pro 947",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/tablet?lock=74",
+        "price": 24679000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf02"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c887"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Vũ Ngọc Phan",
+      "address": "Đường số 12, Phường 8, Hà Nội",
+      "city": "Hà Nội",
+      "phone": 893801674
+    },
+    "paymentMethod": "momo",
+    "itemsPrice": 49358000,
+    "shippingPrice": 0,
+    "totalPrice": 49358000,
+    "user": {
+      "$oid": "69a644e462d002062452c813"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-01-31T05:10:41.668Z"
+    },
+    "isDelivered": true,
+    "deliveredAt": {
+      "$date": "2026-02-02T02:06:52.144Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-30T20:13:55.196Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.447Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c888"
+    },
+    "orderItems": [
+      {
+        "name": "PC LG Slim 451",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/pc,computer?lock=51",
+        "price": 53881000,
+        "discount": 14,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daeeb"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c889"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Ngô Hữu Huy",
+      "address": "Đường số 5, Phường 10, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 512011208
+    },
+    "paymentMethod": "paypal",
+    "itemsPrice": 53881000,
+    "shippingPrice": 0,
+    "totalPrice": 53881000,
+    "user": {
+      "$oid": "69a644e462d002062452c80c"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": true,
+    "deliveredAt": {
+      "$date": "2026-01-20T09:27:37.781Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-18T11:10:39.023Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.432Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c88a"
+    },
+    "orderItems": [
+      {
+        "name": "ĐIỆN THOẠI AKKO Plus 699",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/smartphone?lock=63",
+        "price": 33410000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daef7"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c88b"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Nguyễn Minh Hiệp",
+      "address": "Đường số 4, Phường 4, Hà Nội",
+      "city": "Hà Nội",
+      "phone": 258651558
+    },
+    "paymentMethod": "bank_transfer",
+    "itemsPrice": 100230000,
+    "shippingPrice": 0,
+    "totalPrice": 100230000,
+    "user": {
+      "$oid": "69a644e462d002062452c80b"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-02-22T13:46:01.120Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-22T08:27:55.192Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.418Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c88c"
+    },
+    "orderItems": [
+      {
+        "name": "MÀN HÌNH LG ROG 1064",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/monitor?lock=70",
+        "price": 11371000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daefe"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c88d"
+        }
+      },
+      {
+        "name": "CHUỘT DELL Standard 699",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/mouse?lock=62",
+        "price": 1730000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daef6"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c88e"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Nguyễn Đức Hạnh",
+      "address": "Đường số 3, Phường 3, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 201822264
+    },
+    "paymentMethod": "bank_transfer",
+    "itemsPrice": 13101000,
+    "shippingPrice": 0,
+    "totalPrice": 13101000,
+    "user": {
+      "$oid": "69a644e462d002062452c80a"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-01-19T12:27:36.987Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-18T15:21:10.177Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.415Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c88f"
+    },
+    "orderItems": [
+      {
+        "name": "PC LOGITECH Pro 111",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/pc,computer?lock=28",
+        "price": 25729000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daed4"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c890"
+        }
+      },
+      {
+        "name": "PC CORSAIR Plus 872",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/pc,computer?lock=69",
+        "price": 30945000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daefd"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c891"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Phùng Khắc Toàn",
+      "address": "Đường số 18, Phường 4, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 243737679
+    },
+    "paymentMethod": "bank_transfer",
+    "itemsPrice": 113348000,
+    "shippingPrice": 0,
+    "totalPrice": 113348000,
+    "user": {
+      "$oid": "69a644e462d002062452c819"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-06T07:36:08.839Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.457Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c892"
+    },
+    "orderItems": [
+      {
+        "name": "MÁY TÍNH BẢNG SONY Slim 596",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/tablet?lock=39",
+        "price": 16991000,
+        "discount": 17,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daedf"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c893"
+        }
+      },
+      {
+        "name": "PC CORSAIR Slim 811",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/pc,computer?lock=18",
+        "price": 46986000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daeca"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c894"
+        }
+      },
+      {
+        "name": "LAPTOP ASUS TUF 676",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/laptop?lock=33",
+        "price": 53800000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daed9"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c895"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Đinh Văn Linh",
+      "address": "Đường số 8, Phường 3, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 831156778
+    },
+    "paymentMethod": "later_money",
+    "itemsPrice": 117777000,
+    "shippingPrice": 0,
+    "totalPrice": 117777000,
+    "user": {
+      "$oid": "69a644e462d002062452c80f"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-28T21:12:01.454Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.440Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c896"
+    },
+    "orderItems": [
+      {
+        "name": "MÀN HÌNH STEELSERIES Pro 862",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/monitor?lock=97",
+        "price": 9883000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf19"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c897"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Lê Thị Thu Hà",
+      "address": "Đường số 2, Phường 7, Hà Nội",
+      "city": "Hà Nội",
+      "phone": 883007445
+    },
+    "paymentMethod": "later_money",
+    "itemsPrice": 29649000,
+    "shippingPrice": 0,
+    "totalPrice": 29649000,
+    "user": {
+      "$oid": "69a644e462d002062452c809"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-02-25T13:08:37.571Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-25T11:36:57.941Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.411Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c898"
+    },
+    "orderItems": [
+      {
+        "name": "MÀN HÌNH LG Legendary 1018",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/monitor?lock=83",
+        "price": 11945000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf0b"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c899"
+        }
+      },
+      {
+        "name": "LAPTOP CORSAIR Mini 784",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/laptop?lock=34",
+        "price": 52374000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daeda"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c89a"
+        }
+      },
+      {
+        "name": "LOA DELL Pro 120",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/speaker?lock=47",
+        "price": 5781000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daee7"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c89b"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Nguyễn Thảo Nguyên",
+      "address": "Đường số 10, Phường 6, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 403632319
+    },
+    "paymentMethod": "bank_transfer",
+    "itemsPrice": 134419000,
+    "shippingPrice": 0,
+    "totalPrice": 134419000,
+    "user": {
+      "$oid": "69a644e462d002062452c811"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-02-14T07:27:33.781Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-14T06:06:56.797Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.444Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c89c"
+    },
+    "orderItems": [
+      {
+        "name": "MÁY TÍNH BẢNG RAZER Legendary 855",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/tablet?lock=44",
+        "price": 23499000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daee4"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c89d"
+        }
+      },
+      {
+        "name": "PHỤ KIỆN LG Pro 366",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/accessory?lock=58",
+        "price": 287000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daef2"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c89e"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Phùng Khắc Toàn",
+      "address": "Đường số 18, Phường 4, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 243737679
+    },
+    "paymentMethod": "later_money",
+    "itemsPrice": 47285000,
+    "shippingPrice": 0,
+    "totalPrice": 47285000,
+    "user": {
+      "$oid": "69a644e462d002062452c819"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-02-26T05:52:20.796Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-25T06:39:19.365Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.457Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c89f"
+    },
+    "orderItems": [
+      {
+        "name": "BÀN PHÍM LG Max 916",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/keyboard?lock=73",
+        "price": 4783000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf01"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8a0"
+        }
+      },
+      {
+        "name": "BÀN PHÍM LG Max 916",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/keyboard?lock=73",
+        "price": 4783000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf01"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8a1"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Đinh Văn Linh",
+      "address": "Đường số 8, Phường 3, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 831156778
+    },
+    "paymentMethod": "paypal",
+    "itemsPrice": 28698000,
+    "shippingPrice": 0,
+    "totalPrice": 28698000,
+    "user": {
+      "$oid": "69a644e462d002062452c80f"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-03-02T19:49:13.152Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.440Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c8a2"
+    },
+    "orderItems": [
+      {
+        "name": "PHỤ KIỆN SAMSUNG Pro 1058",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/accessory?lock=1",
+        "price": 378000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daeb9"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8a3"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Bùi Thanh Thủy",
+      "address": "Đường số 15, Phường 7, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 265739067
+    },
+    "paymentMethod": "later_money",
+    "itemsPrice": 1134000,
+    "shippingPrice": 30000,
+    "totalPrice": 1164000,
+    "user": {
+      "$oid": "69a644e462d002062452c816"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-01-06T23:42:16.008Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-06T07:35:05.822Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.452Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c8a4"
+    },
+    "orderItems": [
+      {
+        "name": "MÁY TÍNH BẢNG ASUS Ultra 750",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/tablet?lock=81",
+        "price": 21952000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf09"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8a5"
+        }
+      },
+      {
+        "name": "TAI NGHE SONY Legendary 1068",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/headphone?lock=20",
+        "price": 3819000,
+        "discount": 17,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daecc"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8a6"
+        }
+      },
+      {
+        "name": "MÁY TÍNH BẢNG SONY Slim 596",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/tablet?lock=39",
+        "price": 16991000,
+        "discount": 17,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daedf"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8a7"
+        }
+      },
+      {
+        "name": "BÀN PHÍM LENOVO Max 218",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/keyboard?lock=41",
+        "price": 2304000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daee1"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8a8"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Tạ Minh Quang",
+      "address": "Đường số 13, Phường 9, Nha Trang",
+      "city": "Nha Trang",
+      "phone": 230296235
+    },
+    "paymentMethod": "momo",
+    "itemsPrice": 97397000,
+    "shippingPrice": 0,
+    "totalPrice": 97397000,
+    "user": {
+      "$oid": "69a644e462d002062452c814"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-01-21T18:51:57.104Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-21T00:57:13.961Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.449Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c8a9"
+    },
+    "orderItems": [
+      {
+        "name": "LAPTOP LG Mini 269",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/laptop?lock=23",
+        "price": 35738000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daecf"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8aa"
+        }
+      },
+      {
+        "name": "LAPTOP ACER ROG 144",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/laptop?lock=6",
+        "price": 21026000,
+        "discount": 5,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daebe"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8ab"
+        }
+      },
+      {
+        "name": "PC LOGITECH Pro 111",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/pc,computer?lock=28",
+        "price": 25729000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daed4"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8ac"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Đinh Văn Linh",
+      "address": "Đường số 8, Phường 3, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 831156778
+    },
+    "paymentMethod": "later_money",
+    "itemsPrice": 82493000,
+    "shippingPrice": 0,
+    "totalPrice": 82493000,
+    "user": {
+      "$oid": "69a644e462d002062452c80f"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": true,
+    "deliveredAt": {
+      "$date": "2026-01-19T19:14:52.420Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-17T16:12:00.922Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.440Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c8ad"
+    },
+    "orderItems": [
+      {
+        "name": "LAPTOP HP Max 1026",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/laptop?lock=85",
+        "price": 17057000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf0d"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8ae"
+        }
+      },
+      {
+        "name": "LAPTOP ACER ROG 144",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/laptop?lock=6",
+        "price": 21026000,
+        "discount": 5,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daebe"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8af"
+        }
+      },
+      {
+        "name": "ĐIỆN THOẠI HP Max 115",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/smartphone?lock=78",
+        "price": 39664000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf06"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8b0"
+        }
+      },
+      {
+        "name": "CHUỘT STEELSERIES Mini 560",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/mouse?lock=87",
+        "price": 1261000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf0f"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8b1"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Phùng Khắc Toàn",
+      "address": "Đường số 18, Phường 4, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 243737679
+    },
+    "paymentMethod": "momo",
+    "itemsPrice": 119933000,
+    "shippingPrice": 0,
+    "totalPrice": 119933000,
+    "user": {
+      "$oid": "69a644e462d002062452c819"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-10T05:47:24.527Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.457Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c8b2"
+    },
+    "orderItems": [
+      {
+        "name": "MÁY TÍNH BẢNG LG Standard 1071",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/tablet?lock=11",
+        "price": 17647000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daec3"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8b3"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Lê Thị Thu Hà",
+      "address": "Đường số 2, Phường 7, Hà Nội",
+      "city": "Hà Nội",
+      "phone": 883007445
+    },
+    "paymentMethod": "later_money",
+    "itemsPrice": 52941000,
+    "shippingPrice": 0,
+    "totalPrice": 52941000,
+    "user": {
+      "$oid": "69a644e462d002062452c809"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": true,
+    "deliveredAt": {
+      "$date": "2026-03-02T04:22:31.919Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-25T09:13:04.577Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.411Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c8b4"
+    },
+    "orderItems": [
+      {
+        "name": "LOA HYPERX Slim 837",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/speaker?lock=79",
+        "price": 9969000,
+        "discount": 20,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf07"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8b5"
+        }
+      },
+      {
+        "name": "TAI NGHE DELL Legendary 1080",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/headphone?lock=54",
+        "price": 5698000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daeee"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8b6"
+        }
+      },
+      {
+        "name": "LOA LENOVO TUF 387",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/speaker?lock=21",
+        "price": 4187000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daecd"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8b7"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Nguyễn Thuỳ Ninh",
+      "address": "Đường số 11, Phường 2, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 801956087
+    },
+    "paymentMethod": "bank_transfer",
+    "itemsPrice": 24041000,
+    "shippingPrice": 0,
+    "totalPrice": 24041000,
+    "user": {
+      "$oid": "69a644e462d002062452c812"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-06T12:36:14.103Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.446Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c8b8"
+    },
+    "orderItems": [
+      {
+        "name": "MÀN HÌNH LENOVO Mini 834",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/monitor?lock=15",
+        "price": 3938000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daec7"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8b9"
+        }
+      },
+      {
+        "name": "TAI NGHE ACER Mini 355",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/headphone?lock=19",
+        "price": 7682000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daecb"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8ba"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Nguyễn Đức Hạnh",
+      "address": "Đường số 3, Phường 3, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 201822264
+    },
+    "paymentMethod": "momo",
+    "itemsPrice": 23240000,
+    "shippingPrice": 0,
+    "totalPrice": 23240000,
+    "user": {
+      "$oid": "69a644e462d002062452c80a"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-01-16T06:46:37.935Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-15T08:25:00.845Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.415Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c8bb"
+    },
+    "orderItems": [
+      {
+        "name": "PHỤ KIỆN SONY Mini 603",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/accessory?lock=46",
+        "price": 1240000,
+        "discount": 11,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daee6"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8bc"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Nguyễn Đức Hạnh",
+      "address": "Đường số 3, Phường 3, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 201822264
+    },
+    "paymentMethod": "later_money",
+    "itemsPrice": 2480000,
+    "shippingPrice": 30000,
+    "totalPrice": 2510000,
+    "user": {
+      "$oid": "69a644e462d002062452c80a"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-02-18T21:56:21.439Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-18T03:24:27.141Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.415Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c8bd"
+    },
+    "orderItems": [
+      {
+        "name": "PC APPLE Pro 103",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/pc,computer?lock=65",
+        "price": 73758000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daef9"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8be"
+        }
+      },
+      {
+        "name": "LAPTOP CORSAIR Mini 784",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/laptop?lock=34",
+        "price": 52374000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daeda"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8bf"
+        }
+      },
+      {
+        "name": "MÀN HÌNH SENNHEISER TUF 308",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/monitor?lock=60",
+        "price": 19344000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daef4"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8c0"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Vũ Ngọc Phan",
+      "address": "Đường số 12, Phường 8, Hà Nội",
+      "city": "Hà Nội",
+      "phone": 893801674
+    },
+    "paymentMethod": "momo",
+    "itemsPrice": 219234000,
+    "shippingPrice": 0,
+    "totalPrice": 219234000,
+    "user": {
+      "$oid": "69a644e462d002062452c813"
+    },
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-19T04:25:19.822Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.447Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c8c1"
+    },
+    "orderItems": [
+      {
+        "name": "MÁY TÍNH BẢNG STEELSERIES Pro 530",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/tablet?lock=40",
+        "price": 22837000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daee0"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8c2"
+        }
+      },
+      {
+        "name": "TAI NGHE HP Ultra 535",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/headphone?lock=25",
+        "price": 6957000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daed1"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8c3"
+        }
+      },
+      {
+        "name": "LOA LENOVO TUF 387",
+        "amount": 3,
+        "image": "https://loremflickr.com/640/480/speaker?lock=21",
+        "price": 4187000,
+        "discount": 0,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daecd"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8c4"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Ngô Hữu Huy",
+      "address": "Đường số 5, Phường 10, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 512011208
+    },
+    "paymentMethod": "paypal",
+    "itemsPrice": 101943000,
+    "shippingPrice": 0,
+    "totalPrice": 101943000,
+    "user": {
+      "$oid": "69a644e462d002062452c80c"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-02-21T19:02:39.655Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-02-21T10:43:56.284Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.432Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69a644e462d002062452c8c5"
+    },
+    "orderItems": [
+      {
+        "name": "LOA HYPERX Mini 1058",
+        "amount": 1,
+        "image": "https://loremflickr.com/640/480/speaker?lock=89",
+        "price": 1527000,
+        "discount": 18,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daf11"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8c6"
+        }
+      },
+      {
+        "name": "LAPTOP HYPERX Mini 698",
+        "amount": 2,
+        "image": "https://loremflickr.com/640/480/laptop?lock=67",
+        "price": 35534000,
+        "discount": 23,
+        "product": {
+          "$oid": "69a63bee3b1622a4cf4daefb"
+        },
+        "_id": {
+          "$oid": "69a644e462d002062452c8c7"
+        }
+      }
+    ],
+    "shippingAddress": {
+      "fullName": "Nguyễn Đức Hạnh",
+      "address": "Đường số 3, Phường 3, Đà Nẵng",
+      "city": "Đà Nẵng",
+      "phone": 201822264
+    },
+    "paymentMethod": "bank_transfer",
+    "itemsPrice": 72595000,
+    "shippingPrice": 0,
+    "totalPrice": 72595000,
+    "user": {
+      "$oid": "69a644e462d002062452c80a"
+    },
+    "isPaid": true,
+    "paidAt": {
+      "$date": "2026-01-31T03:38:52.639Z"
+    },
+    "isDelivered": false,
+    "deliveredAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-01-31T02:46:17.247Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-03T05:32:00.415Z"
+    }
+  }
+]
