@@ -1,4 +1,5 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+const mongooseDelete = require('mongoose-delete');
 
 const productSchema = new mongoose.Schema(
     {
@@ -16,6 +17,12 @@ const productSchema = new mongoose.Schema(
         timestamps: true,
     }
 );
+
+// Tích hợp Soft-Delete (Thùng rác & Audit Trails - Ghi nhận thời gian xoá)
+productSchema.plugin(mongooseDelete, {
+    deletedAt: true,
+    overrideMethods: 'all' // Ghi đè phương thức delete mặc định thành soft-delete
+});
 const Product = mongoose.model('Product', productSchema);
 
 module.exports = Product;
