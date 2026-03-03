@@ -142,19 +142,33 @@ const OrderAdmin = () => {
       sorter: (a, b) => a.totalPrice.length - b.totalPrice.length,
       ...getColumnSearchProps('totalPrice')
     },
+    {
+      title: 'Ngày đặt',
+      dataIndex: 'createdAt',
+      sorter: (a, b) => new Date(a.createdAt) - new Date(b.createdAt),
+      ...getColumnSearchProps('createdAt')
+    },
   ];
 
   const dataTable = orders?.data?.length && orders?.data?.map((order) => {
     console.log('usewr', order)
-    return { ...order, key: order._id, userName: order?.shippingAddress?.fullName, phone: order?.shippingAddress?.phone, address: order?.shippingAddress?.address, paymentMethod: orderContant.payment[order?.paymentMethod], isPaid: order?.isPaid ? 'TRUE' : 'FALSE', isDelivered: order?.isDelivered ? 'TRUE' : 'FALSE', totalPrice: convertPrice(order?.totalPrice) }
+    return {
+      ...order,
+      key: order._id,
+      userName: order?.shippingAddress?.fullName,
+      phone: order?.shippingAddress?.phone,
+      address: order?.shippingAddress?.address,
+      paymentMethod: orderContant.payment[order?.paymentMethod],
+      isPaid: order?.isPaid ? 'TRUE' : 'FALSE',
+      isDelivered: order?.isDelivered ? 'TRUE' : 'FALSE',
+      totalPrice: convertPrice(order?.totalPrice),
+      createdAt: new Date(order?.createdAt).toLocaleString('vi-VN')
+    }
   })
 
   return (
     <div>
       <WrapperHeader>Quản lý đơn hàng</WrapperHeader>
-      <div style={{ height: 200, width: 200 }}>
-        <PieChartComponent data={orders?.data} />
-      </div>
       <div style={{ marginTop: '20px' }}>
         <TableComponent columns={columns} isLoading={isFetchingOrder} data={dataTable} />
       </div>
