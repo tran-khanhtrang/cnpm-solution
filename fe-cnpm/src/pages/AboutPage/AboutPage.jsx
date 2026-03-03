@@ -38,15 +38,15 @@ const AboutPage = () => {
                 <Card bordered={false} style={{ borderRadius: 12, boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
                     <div style={{ textAlign: 'center', marginBottom: 40 }}>
                         <Title level={2} style={{ color: '#9255FD', marginBottom: 5 }}>Hệ Thống Thương Mại Điện Tử N5</Title>
-                        <Text type="secondary" style={{ fontSize: 16 }}>Đồ án Công Nghệ Phần Mềm</Text>
+                        <Text type="secondary" style={{ fontSize: 16 }}>Bài báo cáo cuối kỳ - Công Nghệ Phần Mềm</Text>
                     </div>
 
                     <Paragraph style={{ fontSize: 16, lineHeight: 1.8, marginBottom: 30, textAlign: 'justify' }}>
-                        Đây là hệ thống mô phỏng quá trình xây dựng dự án phần mềm E-commerce được thực hiện nhầm đáp ứng yêu cầu của đồ án học phần Công nghệ phần mềm. Hệ thống cung cấp đầy đủ các tính năng cho một sàn giao dịch trực tuyến bao gồm: Quản lý giỏ hàng, đặt hàng, xử lý thanh toán, phân cấp thành viên (VIP/Tích lũy) và hệ thống báo cáo KPI quản trị trực quan.
+                        Đây là hệ thống mô phỏng quá trình xây dựng dự án phần mềm E-commerce được thực hiện nhằm đáp ứng yêu cầu của đề án kết thúc học phần môn học Công nghệ phần mềm. Hệ thống cung cấp đầy đủ các tính năng cho một sàn giao dịch trực tuyến bao gồm: Quản lý giỏ hàng, đặt hàng, xử lý thanh toán, phân cấp thành viên (VIP/Tích lũy) và hệ thống báo cáo KPI quản trị trực quan.
                     </Paragraph>
 
                     <Divider orientation="left">
-                        <Space><TeamOutlined style={{ color: '#1890ff' }} /> <Text strong style={{ fontSize: 18 }}>Danh Sách Nhóm Nhóm 5</Text></Space>
+                        <Space><TeamOutlined style={{ color: '#1890ff' }} /> <Text strong style={{ fontSize: 18 }}>Danh sách Thành viên Nhóm 5</Text></Space>
                     </Divider>
                     <List
                         grid={{ gutter: 16, column: 2 }}
