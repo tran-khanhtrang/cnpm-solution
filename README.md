@@ -1,6 +1,8 @@
-# E-Commerce Project (CNPM Solution)
+# Thủy Lợi N5 eCommerce Project (CNPM Sofware Process Demo Project - Nhóm học viên số 5, Học phần CNPM TLU 2025-2026)
 
-Dự án Hệ thống Thương mại điện tử (E-Commerce) được xây dựng với React (Frontend) và Node.js + MongoDB (Backend). Dự án đã được tích hợp bộ dữ liệu phong phú cùng với các báo cáo KPI chuyên nghiệp phục vụ cho mục đích Demo và Đánh giá môn học.
+# Người viết: Trần Khánh Trang, 32CNTT21, 218248749
+
+Dự án Hệ thống Thương mại điện tử "Thủy Lợi N5" được xây dựng với React (Frontend) và Node.js + MongoDB (Backend). Dự án đã được tích hợp bộ dữ liệu phong phú cùng với các báo cáo KPI chuyên nghiệp phục vụ cho mục đích Demo và Đánh giá môn học.
 
 ## Các tính năng vừa được cập nhật (Bản cập nhật Báo cáo & Dữ liệu Demo)
 
@@ -53,7 +55,7 @@ npm install
 npm start
 ```
 
-*Backend sẽ chạy tại localhost:3001*
+*Backend sẽ chạy tại khanhtrang:3001*
 
 ### Frontend (`fe-cnpm`)
 
@@ -63,6 +65,6 @@ npm install
 npm start
 ```
 
-*Frontend sẽ chạy tại localhost:3000*. Có thể truy cập chức năng hệ thống thông qua `http://localhost:3000/system/admin`.
+*Frontend sẽ chạy tại khanhtrang:3000*. Có thể truy cập chức năng hệ thống thông qua `http://khanhtrang:3000/system/admin`.
 
-*Ghi chú: Để vào được Dashboard quản lý, vui lòng đăng nhập quyền Admin với thông tin mặc định: `admin@gmail.com` | Password: `admin`.*
+*Ghi chú: Để vào được Dashboard quản lý, vui lòng đăng nhập quyền Admin với thông tin mặc định: `trangtk.ftu@gmail.com` | Password: `n5admin@175tayson`.*
