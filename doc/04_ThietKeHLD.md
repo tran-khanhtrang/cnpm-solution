@@ -153,7 +153,7 @@ Dưới đây là thiết kế cổng giao tiếp mạng cơ bản cho luồng P
 
 ### 4.1. Quy ước (Conventions)
 
-- **Base URL (Cổng gốc):** `http://localhost:3001/api`
+- **Base URL (Cổng gốc):** `http://khanhtrang:3001/api`
 - **Định dạng dữ liệu gửi-nhận:** Hoàn toàn bằng chuỗi siêu nhẹ `application/json`.
 - **Bảo mật:** Với API của phần cá nhân (Giỏ hàng, Hồ sơ) và API của mục Quản lý đều cần đính kèm "Thẻ nhớ" `Authorization: Bearer <AccessToken>` vào tiêu đề gói tin gửi đi.
 

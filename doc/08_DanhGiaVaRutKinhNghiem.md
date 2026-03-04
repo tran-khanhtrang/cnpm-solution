@@ -41,7 +41,7 @@ Vì là đồ án sinh viên, ngân sách (Budget) ở đây được quy đổi
 
 | Phân loại | Khó khăn cụ thể gặp phải | Giải pháp nhóm đã áp dụng |
 |-----------|--------------------------|---------------------------|
-| **Kỹ thuật (Tech)** | Lỗi **CORS** (Cross-Origin Resource Sharing) khi React gọi sang cổng của Node.js bị chặn. | Áp dụng thư viện `cors` bên ExpressJS và cấu hình whitelist địa chỉ `http://localhost:3000`. |
+| **Kỹ thuật (Tech)** | Lỗi **CORS** (Cross-Origin Resource Sharing) khi React gọi sang cổng của Node.js bị chặn. | Áp dụng thư viện `cors` bên ExpressJS và cấu hình whitelist địa chỉ `http://khanhtrang:3000`. |
 | **Kỹ thuật (Tech)** | Up ảnh sản phẩm lên MongoDB làm Database phình to và nặng nhanh chóng, quá tải BSON size. | Chuyển file Base64 sang upload lên **Cloudinary**, sau đó DB chỉ cần lưu chuỗi đường dẫn URL `https://...` |
 | **Quy trình (Process)**| Backend code chưa kịp xong, Frontend không có nguồn dữ liệu đổ vào màn hình phải ngồi chơi chờ vài ngày. | Thống nhất "Hợp đồng API" (Data interface) trên mặt giấy. Frontend làm ra cục dữ liệu ảo tĩnh **Fake Data (Mock API / Mock JSON)** để gài vào thiết kế vẽ vời trước, khi nào Backend thật xong việc thì gỡ cái giả ra. |
 | **Nhân sự (People)** | Có bạn bận lịch thi học kỳ khác, xin phép nghỉ 1 vài ngày trong thời gian Sprint quan trọng. | Phân bổ mô hình **Pair-Programming** (2 người cùng quan sát 1 module), người này nghỉ thì người kia biết đường thay thế và fix bug liền. |

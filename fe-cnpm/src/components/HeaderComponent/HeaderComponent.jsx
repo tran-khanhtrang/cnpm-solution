@@ -1,4 +1,4 @@
-import { Badge, Button, Col, Popover } from 'antd'
+import { Badge, Col, Popover } from 'antd'
 import React from 'react'
 import { WrapperContentPopup, WrapperHeader, WrapperHeaderAccout, WrapperLogo, WrapperSlogan, WrapperTextContainer, WrapperTextHeader, WrapperTextHeaderSmall } from './style'
 import logo from '../../assets/images/logo.jpg'

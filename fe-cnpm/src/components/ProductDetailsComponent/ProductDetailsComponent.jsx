@@ -1,7 +1,6 @@
 import { Col, Image, Rate, Row } from 'antd'
 import React from 'react'
-import imageProductSmall from '../../assets/images/imagesmall.webp'
-import { WrapperStyleImageSmall, WrapperStyleColImage, WrapperStyleNameProduct, WrapperStyleTextSell, WrapperPriceProduct, WrapperPriceTextProduct, WrapperAddressProduct, WrapperQualityProduct, WrapperInputNumber, WrapperBtnQualityProduct } from './style'
+import { WrapperStyleNameProduct, WrapperStyleTextSell, WrapperPriceProduct, WrapperPriceTextProduct, WrapperAddressProduct, WrapperQualityProduct, WrapperInputNumber } from './style'
 import { PlusOutlined, MinusOutlined } from '@ant-design/icons'
 import ButtonComponent from '../ButtonComponent/ButtonComponent'
 import * as ProductService from '../../services/ProductService'
@@ -16,7 +15,6 @@ import { useEffect } from 'react'
 import * as message from '../Message/Message'
 import LikeButtonComponent from '../LikeButtonComponent/LikeButtonComponent'
 import CommentComponent from '../CommentComponent/CommentComponent'
-import { useMemo } from 'react'
 
 const ProductDetailsComponent = ({ idProduct }) => {
     const [numProduct, setNumProduct] = useState(1)

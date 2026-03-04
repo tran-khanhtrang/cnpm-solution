@@ -1,4 +1,4 @@
-import { Checkbox, Form } from 'antd'
+import { Form } from 'antd'
 import React, { useEffect, useState } from 'react'
 import { CustomCheckbox, WrapperCountOrder, WrapperInfo, WrapperItemOrder, WrapperLeft, WrapperListOrder, WrapperRight, WrapperStyleHeader, WrapperStyleHeaderDilivery, WrapperTotal } from './style';
 import { DeleteOutlined, MinusOutlined, PlusOutlined } from '@ant-design/icons'

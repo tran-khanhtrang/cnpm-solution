@@ -1,4 +1,4 @@
-import React,{ useEffect, useState } from 'react'
+import React,{ useEffect } from 'react'
 import Loading from '../../components/LoadingComponent/Loading';
 import { useQuery } from '@tanstack/react-query';
 import * as OrderService from '../../services/OrderService'

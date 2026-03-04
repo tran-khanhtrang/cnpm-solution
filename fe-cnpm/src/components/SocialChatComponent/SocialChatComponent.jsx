@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { MessageOutlined, CloseOutlined, FacebookOutlined, SendOutlined, PhoneOutlined } from '@ant-design/icons';
+import { MessageOutlined, CloseOutlined, FacebookOutlined, SendOutlined } from '@ant-design/icons';
 
 const ChatWrapper = styled.div`
   position: fixed;

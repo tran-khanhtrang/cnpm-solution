@@ -42,7 +42,7 @@ const createOrder = (newOrder) => {
                 newData.forEach((item) => {
                     arrId.push(item.id)
                 })
-                resolve({
+                return resolve({
                     status: 'ERR',
                     message: `San pham voi id: ${arrId.join(',')} khong du hang`
                 })
@@ -80,32 +80,17 @@ const createOrder = (newOrder) => {
                     } catch (e) {
                         console.log('Error sending email:', e)
                     }
-                    resolve({
+                    return resolve({
                         status: 'OK',
-                        message: 'success'
+                        message: 'SUCCESS'
                     })
                 }
             }
         } catch (e) {
-            //   console.log('e', e)
             reject(e)
         }
     })
 }
-
-// const deleteManyProduct = (ids) => {
-//     return new Promise(async (resolve, reject) => {
-//         try {
-//             await Product.deleteMany({ _id: ids })
-//             resolve({
-//                 status: 'OK',
-//                 message: 'Delete product success',
-//             })
-//         } catch (e) {
-//             reject(e)
-//         }
-//     })
-// }
 
 const getAllOrderDetails = (id) => {
     return new Promise(async (resolve, reject) => {
@@ -114,19 +99,18 @@ const getAllOrderDetails = (id) => {
                 user: id
             }).sort({ createdAt: -1, updatedAt: -1 })
             if (order === null) {
-                resolve({
+                return resolve({
                     status: 'ERR',
                     message: 'The order is not defined'
                 })
             }
 
-            resolve({
+            return resolve({
                 status: 'OK',
-                message: 'SUCESSS',
+                message: 'SUCCESS',
                 data: order
             })
         } catch (e) {
-            // console.log('e', e)
             reject(e)
         }
     })
@@ -139,19 +123,18 @@ const getOrderDetails = (id) => {
                 _id: id
             })
             if (order === null) {
-                resolve({
+                return resolve({
                     status: 'ERR',
                     message: 'The order is not defined'
                 })
             }
 
-            resolve({
+            return resolve({
                 status: 'OK',
-                message: 'SUCESSS',
+                message: 'SUCCESS',
                 data: order
             })
         } catch (e) {
-            // console.log('e', e)
             reject(e)
         }
     })
@@ -160,50 +143,49 @@ const getOrderDetails = (id) => {
 const cancelOrderDetails = (id, data) => {
     return new Promise(async (resolve, reject) => {
         try {
-            let order = []
-            const promises = data.map(async (order) => {
+            let cancelledOrder = null
+            const promises = data.map(async (item) => {
                 const productData = await Product.findOneAndUpdate(
                     {
-                        _id: order.product,
-                        selled: { $gte: order.amount }
+                        _id: item.product,
+                        selled: { $gte: item.amount }
                     },
                     {
                         $inc: {
-                            countInStock: +order.amount,
-                            selled: -order.amount
+                            countInStock: +item.amount,
+                            selled: -item.amount
                         }
                     },
                     { new: true }
                 )
                 if (productData) {
-                    order = await Order.findByIdAndDelete(id)
-                    if (order === null) {
-                        resolve({
+                    cancelledOrder = await Order.findByIdAndDelete(id)
+                    if (cancelledOrder === null) {
+                        return resolve({
                             status: 'ERR',
                             message: 'The order is not defined'
                         })
                     }
                 } else {
                     return {
-                        status: 'OK',
-                        message: 'ERR',
-                        id: order.product
+                        status: 'ERR',
+                        id: item.product
                     }
                 }
             })
             const results = await Promise.all(promises)
-            const newData = results && results[0] && results[0].id
+            const failedItem = results && results.find(r => r && r.id)
 
-            if (newData) {
-                resolve({
+            if (failedItem) {
+                return resolve({
                     status: 'ERR',
-                    message: `San pham voi id: ${newData} khong ton tai`
+                    message: `San pham voi id: ${failedItem.id} khong ton tai`
                 })
             }
-            resolve({
+            return resolve({
                 status: 'OK',
-                message: 'success',
-                data: order
+                message: 'SUCCESS',
+                data: cancelledOrder
             })
         } catch (e) {
             reject(e)
@@ -215,7 +197,7 @@ const getAllOrder = () => {
     return new Promise(async (resolve, reject) => {
         try {
             const allOrder = await Order.find().sort({ createdAt: -1, updatedAt: -1 })
-            resolve({
+            return resolve({
                 status: 'OK',
                 message: 'Success',
                 data: allOrder

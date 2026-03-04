@@ -2,7 +2,7 @@
 
 ## 1. Giới thiệu sơ lược
 
-Tài liệu hướng dẫn cung cấp quy trình từng bước từ A-Z để cài đặt, thiết lập môi trường Cơ sở dữ liệu, cấu hình Source Code và khởi chạy toàn bộ Hệ thống Thương mại Điện tử. Đây là "cẩm nang" bắt buộc để **Giảng Viên** và các **Cộng sự** có thể nạp mã nguồn dự án về và tự chạy trên máy tính cá nhân của mình (**Localhost** – môi trường máy tính cục bộ offline) để nghiệm thu đánh giá.
+Tài liệu hướng dẫn cung cấp quy trình từng bước từ A-Z để cài đặt, thiết lập môi trường Cơ sở dữ liệu, cấu hình Source Code và khởi chạy toàn bộ Hệ thống Thương mại Điện tử. Đây là "cẩm nang" bắt buộc để **Giảng Viên** và các **Cộng sự** có thể nạp mã nguồn dự án về và tự chạy trên máy tính cá nhân của mình (**khanhtrang** – môi trường máy tính cục bộ offline) để nghiệm thu đánh giá.
 
 ## 2. Yêu cầu Cấu hình Hệ thống (Prerequisites)
 
@@ -51,7 +51,7 @@ REFRESH_TOKEN=bi_mat_refresh_jwt_string_cnpm
 CLIENT_ID=dia_chi_frontend_cors_hoac_client_oauth
 ```
 
-*(Nếu MongoDB URI không truy cập được do đóng Cloud, vui lòng sửa lại thành Local URI: `mongodb://localhost:27017/ecommerceDB`)*
+*(Nếu MongoDB URI không truy cập được do đóng Cloud, vui lòng sửa lại thành Local URI: `mongodb://khanhtrang:27017/ecommerceDB`)*
 
 **Bước 4: Bật máy chủ Backend**
 Khởi động Node.js server dưới chế độ Monitor để theo dõi log nóng.
@@ -86,7 +86,7 @@ npm install --legacy-peer-deps
 Tương tự Backend, sinh ra file `.env` tại gốc thư mục `/fe-cnpm`, chỉ ra Frontend biết nơi Backend đang đứng chờ API:
 
 ```env
-REACT_APP_API_URL=http://localhost:3001/api
+REACT_APP_API_URL=http://khanhtrang:3001/api
 ```
 
 **Bước 4: Khởi chạy Giao diện Frontend**
@@ -95,7 +95,7 @@ REACT_APP_API_URL=http://localhost:3001/api
 npm start
 ```
 
-*Hệ thống Webpack sẽ Pack file và tự động bật trình duyệt mặc định vào URL: `http://localhost:3000`.*
+*Hệ thống Webpack sẽ Pack file và tự động bật trình duyệt mặc định vào URL: `http://khanhtrang:3000`.*
 
 ---
 

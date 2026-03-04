@@ -8,7 +8,7 @@ const createProduct = (newProduct) => {
                 name: name
             })
             if (checkProduct !== null) {
-                resolve({
+                return resolve({
                     status: 'ERR',
                     message: 'The name of product is already'
                 })
@@ -24,7 +24,7 @@ const createProduct = (newProduct) => {
                 discount: Number(discount),
             })
             if (newProduct) {
-                resolve({
+                return resolve({
                     status: 'OK',
                     message: 'SUCCESS',
                     data: newProduct
@@ -43,14 +43,14 @@ const updateProduct = (id, data) => {
                 _id: id
             })
             if (checkProduct === null) {
-                resolve({
+                return resolve({
                     status: 'ERR',
                     message: 'The product is not defined'
                 })
             }
 
             const updatedProduct = await Product.findByIdAndUpdate(id, data, { new: true })
-            resolve({
+            return resolve({
                 status: 'OK',
                 message: 'SUCCESS',
                 data: updatedProduct
@@ -68,14 +68,14 @@ const deleteProduct = (id) => {
                 _id: id
             })
             if (checkProduct === null) {
-                resolve({
+                return resolve({
                     status: 'ERR',
                     message: 'The product is not defined'
                 })
             }
 
             await Product.findByIdAndDelete(id)
-            resolve({
+            return resolve({
                 status: 'OK',
                 message: 'Delete product success',
             })
@@ -89,7 +89,7 @@ const deleteManyProduct = (ids) => {
     return new Promise(async (resolve, reject) => {
         try {
             await Product.deleteMany({ _id: ids })
-            resolve({
+            return resolve({
                 status: 'OK',
                 message: 'Delete product success',
             })
@@ -106,15 +106,15 @@ const getDetailsProduct = (id) => {
                 _id: id
             })
             if (product === null) {
-                resolve({
+                return resolve({
                     status: 'ERR',
                     message: 'The product is not defined'
                 })
             }
 
-            resolve({
+            return resolve({
                 status: 'OK',
-                message: 'SUCESS',
+                message: 'SUCCESS',
                 data: product
             })
         } catch (e) {
@@ -131,7 +131,7 @@ const getAllProduct = (limit, page, sort, filter) => {
                 const label = filter[0];
                 const allObjectFilter = await Product.find({ [label]: { '$regex': filter[1], '$options': 'i' } }).limit(limit).skip(page * limit).sort({ createdAt: -1, updatedAt: -1 })
                 const totalFilteredProduct = await Product.countDocuments({ [label]: { '$regex': filter[1], '$options': 'i' } });
-                resolve({
+                return resolve({
                     status: 'OK',
                     message: 'Success',
                     data: allObjectFilter,
@@ -145,7 +145,7 @@ const getAllProduct = (limit, page, sort, filter) => {
                 const objectSort = {}
                 objectSort[sort[1]] = sort[0]
                 const allProductSort = await Product.find().limit(limit).skip(page * limit).sort(objectSort).sort({ createdAt: -1, updatedAt: -1 })
-                resolve({
+                return resolve({
                     status: 'OK',
                     message: 'Success',
                     data: allProductSort,
@@ -160,7 +160,7 @@ const getAllProduct = (limit, page, sort, filter) => {
             } else {
                 allProduct = await Product.find().limit(limit).skip(page * limit).sort({ createdAt: -1, updatedAt: -1 })
             }
-            resolve({
+            return resolve({
                 status: 'OK',
                 message: 'Success',
                 data: allProduct,
@@ -178,7 +178,7 @@ const getAllType = () => {
     return new Promise(async (resolve, reject) => {
         try {
             const allType = await Product.distinct('type')
-            resolve({
+            return resolve({
                 status: 'OK',
                 message: 'Success',
                 data: allType,

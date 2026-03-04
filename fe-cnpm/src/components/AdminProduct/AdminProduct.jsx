@@ -155,7 +155,7 @@ const AdminProduct = () => {
   const { data, isLoading, isSuccess, isError } = mutation
   const { data: dataUpdated, isLoading: isLoadingUpdated, isSuccess: isSuccessUpdated, isError: isErrorUpdated } = mutationUpdate
   const { data: dataDeleted, isLoading: isLoadingDeleted, isSuccess: isSuccessDelected, isError: isErrorDeleted } = mutationDeleted
-  const { data: dataDeletedMany, isLoading: isLoadingDeletedMany, isSuccess: isSuccessDelectedMany, isError: isErrorDeletedMany } = mutationDeletedMany
+  const { data: dataDeletedMany, isSuccess: isSuccessDelectedMany, isError: isErrorDeletedMany } = mutationDeletedMany
 
 
   const queryClient = useQueryClient()
@@ -172,7 +172,7 @@ const AdminProduct = () => {
   }
 
 
-  const handleSearch = (selectedKeys, confirm, dataIndex) => {
+  const handleSearch = (selectedKeys, confirm, _dataIndex) => {
     confirm();
     // setSearchText(selectedKeys[0]);
     // setSearchedColumn(dataIndex);
@@ -471,9 +471,9 @@ const AdminProduct = () => {
         <Button style={{ height: '150px', width: '150px', borderRadius: '6px', borderStyle: 'dashed' }} onClick={() => setIsModalOpen(true)}><PlusOutlined style={{ fontSize: '60px' }} /></Button>
       </div>
       <div style={{ marginTop: '20px' }}>
-        <TableComponent handleDeleteMany={handleDeleteManyProducts} columns={columns} isLoading={isFetchingProduct} data={dataTable} onRow={(record, rowIndex) => {
+        <TableComponent handleDeleteMany={handleDeleteManyProducts} columns={columns} isLoading={isFetchingProduct} data={dataTable} onRow={(record, _rowIndex) => {
           return {
-            onClick: event => {
+            onClick: _event => {
               setRowSelected(record._id)
             }
           };

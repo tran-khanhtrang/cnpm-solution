@@ -1,0 +1,51 @@
+
+D:\zNeurals\cnpm\WIP\solution\fe-cnpm\src\components\AdminProduct\AdminProduct.jsx
+  158:45   warning  'isLoadingDeletedMany' is assigned a value but never used. Allowed unused vars must match /^_/u  unused-imports/no-unused-vars
+  175:48   warning  'dataIndex' is defined but never used. Allowed unused args must match /^_/u                      unused-imports/no-unused-vars
+  474:150  warning  'rowIndex' is defined but never used. Allowed unused args must match /^_/u                       unused-imports/no-unused-vars
+  476:22   warning  'event' is defined but never used. Allowed unused args must match /^_/u                          unused-imports/no-unused-vars
+
+D:\zNeurals\cnpm\WIP\solution\fe-cnpm\src\components\AdminUser\AdminUser.jsx
+  114:45   warning  'isLoadingDeletedMany' is assigned a value but never used. Allowed unused vars must match /^_/u  unused-imports/no-unused-vars
+  129:48   warning  'dataIndex' is defined but never used. Allowed unused args must match /^_/u                      unused-imports/no-unused-vars
+  379:144  warning  'rowIndex' is defined but never used. Allowed unused args must match /^_/u                       unused-imports/no-unused-vars
+  381:22   warning  'event' is defined but never used. Allowed unused args must match /^_/u                          unused-imports/no-unused-vars
+
+D:\zNeurals\cnpm\WIP\solution\fe-cnpm\src\components\CardComponent\CardComponent.jsx
+  9:13  warning  'countInStock' is assigned a value but never used. Allowed unused vars must match /^_/u  unused-imports/no-unused-vars
+  9:27  warning  'description' is assigned a value but never used. Allowed unused vars must match /^_/u   unused-imports/no-unused-vars
+  9:68  warning  'type' is assigned a value but never used. Allowed unused vars must match /^_/u          unused-imports/no-unused-vars
+
+D:\zNeurals\cnpm\WIP\solution\fe-cnpm\src\components\HeaderComponent\HeaderComponent.jsx
+  27:10  warning  'search' is assigned a value but never used. Allowed unused vars must match /^_/u  unused-imports/no-unused-vars
+
+D:\zNeurals\cnpm\WIP\solution\fe-cnpm\src\components\OrderAdmin\OrderAdmin.jsx
+  14:9   warning  'user' is assigned a value but never used. Allowed unused vars must match /^_/u  unused-imports/no-unused-vars
+  22:55  warning  'confirm' is defined but never used. Allowed unused args must match /^_/u        unused-imports/no-unused-vars
+  22:64  warning  'clearFilters' is defined but never used. Allowed unused args must match /^_/u   unused-imports/no-unused-vars
+
+D:\zNeurals\cnpm\WIP\solution\fe-cnpm\src\components\TableComponent\TableComponent.jsx
+  16:33  warning  'selectedRows' is defined but never used. Allowed unused args must match /^_/u  unused-imports/no-unused-vars
+
+D:\zNeurals\cnpm\WIP\solution\fe-cnpm\src\pages\AdminPage\constant.js
+  1:7  warning  'data' is assigned a value but never used. Allowed unused vars must match /^_/u  unused-imports/no-unused-vars
+
+D:\zNeurals\cnpm\WIP\solution\fe-cnpm\src\pages\HomePage\HomePage.jsx
+  20:19  warning  'setLoading' is assigned a value but never used. Allowed unused vars must match /^_/u  unused-imports/no-unused-vars
+
+D:\zNeurals\cnpm\WIP\solution\fe-cnpm\src\pages\OrderPage\OrderPage.jsx
+  158:22  warning  'data' is assigned a value but never used. Allowed unused vars must match /^_/u  unused-imports/no-unused-vars
+
+D:\zNeurals\cnpm\WIP\solution\fe-cnpm\src\pages\PaymentPage\PaymentPage.jsx
+  140:22  warning  'data' is assigned a value but never used. Allowed unused vars must match /^_/u             unused-imports/no-unused-vars
+  177:9   warning  'onSuccessPaypal' is assigned a value but never used. Allowed unused vars must match /^_/u  unused-imports/no-unused-vars
+  177:37  warning  'data' is defined but never used. Allowed unused args must match /^_/u                      unused-imports/no-unused-vars
+
+D:\zNeurals\cnpm\WIP\solution\fe-cnpm\src\pages\Profile\ProfilePage.jsx
+  32:13  warning  'data' is assigned a value but never used. Allowed unused vars must match /^_/u  unused-imports/no-unused-vars
+
+D:\zNeurals\cnpm\WIP\solution\fe-cnpm\src\pages\SignInPage\SignInPage.jsx
+  23:9  warning  'user' is assigned a value but never used. Allowed unused vars must match /^_/u  unused-imports/no-unused-vars
+
+Γ£û 24 problems (0 errors, 24 warnings)
+

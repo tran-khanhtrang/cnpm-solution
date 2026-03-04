@@ -55,7 +55,7 @@ const loginUser = async (req, res) => {
             sameSite: 'strict',
             path: '/',
         })
-        return res.status(200).json({...newReponse, refresh_token})
+        return res.status(200).json({ ...newReponse, refresh_token })
     } catch (e) {
         return res.status(404).json({
             message: e
@@ -150,7 +150,14 @@ const getDetailsUser = async (req, res) => {
 
 const refreshToken = async (req, res) => {
     try {
-        let token = req.headers.token.split(' ')[1]
+        const authHeader = req.headers.token
+        if (!authHeader) {
+            return res.status(200).json({
+                status: 'ERR',
+                message: 'The token is required'
+            })
+        }
+        const token = authHeader.split(' ')[1]
         if (!token) {
             return res.status(200).json({
                 status: 'ERR',

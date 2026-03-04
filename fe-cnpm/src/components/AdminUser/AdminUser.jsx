@@ -14,7 +14,7 @@ import { useSelector } from 'react-redux'
 import { useRef } from 'react'
 import { useMutationHooks } from '../../hooks/useMutationHook'
 import * as UserService from '../../services/UserService'
-import { useIsFetching, useQuery, useQueryClient } from '@tanstack/react-query'
+import { useIsFetching, useQueryClient } from '@tanstack/react-query'
 import { DeleteOutlined, EditOutlined, SearchOutlined } from '@ant-design/icons'
 
 const AdminUser = () => {
@@ -111,7 +111,7 @@ const AdminUser = () => {
 
   const { data: dataUpdated, isLoading: isLoadingUpdated, isSuccess: isSuccessUpdated, isError: isErrorUpdated } = mutationUpdate
   const { data: dataDeleted, isLoading: isLoadingDeleted, isSuccess: isSuccessDelected, isError: isErrorDeleted } = mutationDeleted
-  const { data: dataDeletedMany, isLoading: isLoadingDeletedMany, isSuccess: isSuccessDelectedMany, isError: isErrorDeletedMany } = mutationDeletedMany
+  const { data: dataDeletedMany, isSuccess: isSuccessDelectedMany, isError: isErrorDeletedMany } = mutationDeletedMany
 
   const queryClient = useQueryClient()
   const users = queryClient.getQueryData(['users'])
@@ -126,7 +126,7 @@ const AdminUser = () => {
     )
   }
 
-  const handleSearch = (selectedKeys, confirm, dataIndex) => {
+  const handleSearch = (selectedKeys, confirm, _dataIndex) => {
     confirm();
     // setSearchText(selectedKeys[0]);
     // setSearchedColumn(dataIndex);
@@ -376,9 +376,9 @@ const AdminUser = () => {
     <div>
       <WrapperHeader>Quản lý người dùng</WrapperHeader>
       <div style={{ marginTop: '20px' }}>
-        <TableComponent handleDeleteMany={handleDeleteManyUsers} columns={columns} isLoading={isFetchingUser} data={dataTable} onRow={(record, rowIndex) => {
+        <TableComponent handleDeleteMany={handleDeleteManyUsers} columns={columns} isLoading={isFetchingUser} data={dataTable} onRow={(record, _rowIndex) => {
           return {
-            onClick: event => {
+            onClick: _event => {
               setRowSelected(record._id)
             }
           };

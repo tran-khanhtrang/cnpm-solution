@@ -1,4 +1,4 @@
-import React, { PureComponent }  from 'react'
+import React  from 'react'
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 import { convertDataChart } from '../../utils';
 

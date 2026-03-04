@@ -1,7 +1,5 @@
 # Thủy Lợi N5 eCommerce Project (CNPM Sofware Process Demo Project - Nhóm học viên số 5, Học phần CNPM TLU 2025-2026)
 
-# Người viết: Trần Khánh Trang, 32CNTT21, 218248749
-
 Dự án Hệ thống Thương mại điện tử "Thủy Lợi N5" được xây dựng với React (Frontend) và Node.js + MongoDB (Backend). Dự án đã được tích hợp bộ dữ liệu phong phú cùng với các báo cáo KPI chuyên nghiệp phục vụ cho mục đích Demo và Đánh giá môn học.
 
 ## Các tính năng vừa được cập nhật (Bản cập nhật Báo cáo & Dữ liệu Demo)
@@ -27,6 +25,23 @@ Dự án Hệ thống Thương mại điện tử "Thủy Lợi N5" được xâ
   - *Biểu đồ Top Customers:* Hiển thị thông tin tổng hợp Top 10 khách hàng có sức mua lớn nhất, tích hợp Sorting "Theo tổng tiền" hoặc "Theo số lượng đơn".
   - *Biểu đồ Top Selling:* Top 5 Sản phẩm bán chạy nhất hệ thống hiển thị cùng hàng ngang giúp tăng trải nghiệm tra cứu cho Admin .
 
+### 3. 🔒 Vá lỗi Bảo mật & Chất lượng Code (Security Patch v1.1 — 04/03/2026)
+
+Trước thời điểm bảo vệ đồ án, nhóm đã thực hiện **vòng rà soát mã nguồn tổng thể (Code Review Round 2)** và phát hiện, vá các lỗi kỹ thuật sau:
+
+| # | Vấn đề | File | Trạng thái |
+|---|--------|------|------------|
+| SEC_01 | Server crash (HTTP 500) khi gọi API bảo mật mà không đính kèm header `token` — do thiếu null-check trước `.split()` | `authMiddleware.js` | ✅ Fixed |
+| SEC_02 | `UserController.refreshToken` crash tương tự khi thiếu header | `UserController.js` | ✅ Fixed |
+| SEC_03 | Route `GET /order/get-details-order/:id` không có Auth — bất kỳ ai biết `orderId` đều xem được thông tin cá nhân khách hàng | `OrderRouter.js` | ✅ Fixed |
+| SEC_04 | Logic lỗi thiếu `return` sau `resolve(ERR)` khiến code tiếp tục thực thi trên dữ liệu `null` — tồn tại trong toàn bộ `UserService`, `ProductService`, `OrderService` | `*Service.js` (BE) | ✅ Fixed |
+| SEC_05 | Shadow variable trong `cancelOrderDetails` — response `data` luôn trả về mảng rỗng thay vì đơn hàng vừa hủy | `OrderService.js` | ✅ Fixed |
+| CQ_01 | Typo `'SUCESS'`/`'SUCESSS'` trong response message của nhiều Service | `*Service.js` (BE) | ✅ Fixed |
+| CQ_02 | Debug `console.log` bị bỏ quên trong `utils.js` — in thông tin nội bộ ra console người dùng | `utils.js` (FE) | ✅ Fixed |
+| CQ_03 | Sai thứ tự tham số `axios.delete(url, data, config)` — chức năng xóa User của Admin im lặng thất bại | `UserService.js` (FE) | ✅ Fixed |
+
+> 📋 Chi tiết đầy đủ các bước test, bug found và evidence xem tại: [doc/06_DacTaKiemThu.md — Mục 6.4 & 6.5](doc/06_DacTaKiemThu.md)
+
 ## 📚 Tài liệu dự án (Documentation)
 
 Hệ thống tài liệu đầy đủ được lưu trữ trong thư mục `doc/`. Bạn có thể tham khảo trực tiếp các file Markdown:
@@ -45,7 +60,7 @@ Hệ thống tài liệu đầy đủ được lưu trữ trong thư mục `doc/
 
 ## Cài đặt và Khởi chạy
 
-Dự án chia làm 2 thư mục chính là Backend (`be-cnpm`) và Frontend (`fe-cnpm`). Đảm bảo MongoDB của bạn đã được bật ở `127.0.0.1:27017` trước khi chạy.
+Dự án chia làm 2 thư mục chính là Backend (`be-cnpm`) và Frontend (`fe-cnpm`). Đảm bảo MongoDB của bạn đã được bật ở `khanhtrang:27017` trước khi chạy.
 
 ### Backend (`be-cnpm`)
 
@@ -68,3 +83,5 @@ npm start
 *Frontend sẽ chạy tại khanhtrang:3000*. Có thể truy cập chức năng hệ thống thông qua `http://khanhtrang:3000/system/admin`.
 
 *Ghi chú: Để vào được Dashboard quản lý, vui lòng đăng nhập quyền Admin với thông tin mặc định: `trangtk.ftu@gmail.com` | Password: `n5admin@175tayson`.*
+
+*Người viết: Trần Khánh Trang, 32CNTT21, 218248749
