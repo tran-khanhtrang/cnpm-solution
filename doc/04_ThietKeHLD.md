@@ -15,10 +15,23 @@ graph TD
 
 Tuân theo mô hình phân lớp Component - Caching - Global State:
 
-- **Components:** Các "Viên gạch" đồ họa chia nhỏ, có tính tái sử dụng cao như Giao diện một nút bấm, Menu phía trên (Header), Khung thông tin một thẻ sản phẩm. Chúng được ghép vào nhau như Lego để ra giao diện lớn.
-- **Pages (Trang):** Tập hợp trọn vẹn các thành phần màn hình độc lập như Trang Chủ, Trang Chi Tiết Sản Phẩm, Trang Admin Quản trị.
-- **Redux/Toolkit:** Kho tàng lưu trữ dữ liệu thông tin toàn cục trên mặt web (Ví dụ giúp các trang nhớ được bạn đang đăng nhập là Mẹ Bé Bông, nhớ được Giỏ hàng Của bạn đang có 3 hộp sữa mà không cần gọi hỏi máy chủ).
-- **React Query:** Bộ công cụ xịn làm nhiệm vụ đi "đòi" dữ liệu từ máy chủ API đem về cho màn hình, có khả năng ghi nhớ đệm (Caching) để cùng 1 câu hỏi sẽ ưu tiên đem kho đã nhớ ra cho bạn xem nhanh thay vì cất công gọi máy điện báo lại.
+- **Components:** Các "Viên gạch" đồ họa chia nhỏ, có tính tái sử dụng cao như Giao diện một nút bấm, Menu phía trên (Header).
+- **Pages (Trang):** Tập hợp trọn vẹn các thành phần màn hình độc lập như Trang Chủ, Trang Chi Tiết Sản Phẩm.
+- **Redux/Toolkit:** Kho tàng lưu trữ trạng thái toàn cục tránh việc truyền props quá sâu (Prop Drilling).
+- **React Query:** Quản lý state của API, tự động Caching và Refetching dữ liệu giúp web mượt hơn.
+
+**Sơ đồ Khối Frontend (Component Diagram):**
+
+```mermaid
+graph TD
+    App[App.js Root] --> Router[React Router]
+    Router --> Layout[Layout Mặc định / Admin Layout]
+    Layout --> Header[Header Component]
+    Layout --> Footer[Footer Component]
+    Layout --> Pages[Pages: Home, Product, Cart, Admin KPI]
+    Pages --> UI[UI Core: AntD Table, Drawer, Modal]
+    Pages --> Services[HTTP Client - Axios]
+```
 
 ### 1.2 Tầng Backend (Logical Server)
 
@@ -28,6 +41,16 @@ Xây dựng trên Runtime Environment NodeJS, framework Express tuân theo dạn
 - **Controllers (`src/controllers`):** Xử lý input từ client gửi lên (Req.body, Req.params), điều phối kết quả trả về đúng format Response (JSON).
 - **Services (`src/services`):** Khối lõi logic nghiệp vụ sâu (logic tính toán doanh thu, mã hóa, transaction).
 - **Models (`src/models`):** Khai báo schema chuẩn từ Mongoose ánh xạ vào các Collection riêng tại MongoDB.
+
+### 1.3 Môi trường Triển khai (Deployment Architecture)
+
+```mermaid
+graph LR
+    User[Trình duyệt / Người dùng] -->|HTTP/HTTPS| Internet((Internet))
+    Internet -->|Cổng 3000| FE[Frontend: Vercel / Netlify]
+    Internet -->|Cổng 3001| BE[Backend: Render / Railway]
+    BE -->|Connection String| DB[(MongoDB Atlas Cloud)]
+```
 
 ## 2. Thiết kế Cơ sở Dữ liệu (Database Schema / Entities)
 
@@ -113,9 +136,46 @@ erDiagram
 - `deliveredAt`: Date
 - `createdAt` / `updatedAt`: Timestamps tự sinh **(Cực kỳ quan trọng để vẽ biểu đồ và xuất báo cáo KPI Revenue)**.
 
-## 3. Sequence Diagram (Luồng Đặt hàng cốt yếu - Checkout flow logic)
+## 3. Sequence Diagrams (Lưu đồ Tuần tự)
 
-Dưới đây là lưu đồ hoạt động ở nghiệp vụ nhạy cảm và quan trọng nhất: Đặt hàng xử lý giao dịch cơ bản.
+Dưới đây là chi tiết các luồng hoạt động chính của hệ thống.
+
+### 3.1 Luồng Xác thực (JWT Authentication Flow)
+
+Đảm bảo an toàn thông tin và cơ chế duy trì đăng nhập (Session) mà không sử dụng Cookies truyền thống:
+
+```mermaid
+sequenceDiagram
+    participant U as Client (ReactJS)
+    participant A as Auth API (Node.js)
+    participant DB as MongoDB
+    
+    U->>A: POST `/user/sign-in` (email, password)
+    A->>DB: Tìm User theo email
+    DB-->>A: User record (kèm băm password)
+    A->>A: Bcrypt compare hash mật khẩu
+    
+    alt Sai mật khẩu / Email
+        A-->>U: Lỗi 404 / 401 Unauthorized
+    else Hợp lệ
+        A->>A: Generate AccessToken (1h) & RefreshToken (30d)
+        A-->>U: Trả về Token + Thông tin User
+        U->>U: Lưu Token vào LocalStorage / Redux
+    end
+    
+    Note over U,A: Access Protected Routes (e.g. Dashboard)
+    U->>A: GET `/order/get-all` + Header: Bearer Token
+    A->>A: Verify AccessToken signature
+    alt Hợp lệ
+        A-->>U: Data thành công (200 OK)
+    else Hết hạn (Expired)
+        A-->>U: Lỗi 401 Unauthorized (Yêu cầu Refresh / Login lại)
+    end
+```
+
+### 3.2 Luồng Đặt hàng cốt yếu (Checkout Flow logic)
+
+Dưới đây là lưu đồ hoạt động ở nghiệp vụ nhạy cảm và quan trọng nhất: Đặt hàng xử lý giao dịch.
 
 ```mermaid
 sequenceDiagram
@@ -153,19 +213,28 @@ Dưới đây là thiết kế cổng giao tiếp mạng cơ bản cho luồng P
 
 ### 4.1. Quy ước (Conventions)
 
-- **Base URL (Cổng gốc):** `http://khanhtrang:3001/api`
+- **Base URL (Cổng gốc):** `http://khanhtrang:3001/api` *(hoặc domain mây)*
 - **Định dạng dữ liệu gửi-nhận:** Hoàn toàn bằng chuỗi siêu nhẹ `application/json`.
 - **Bảo mật:** Với API của phần cá nhân (Giỏ hàng, Hồ sơ) và API của mục Quản lý đều cần đính kèm "Thẻ nhớ" `Authorization: Bearer <AccessToken>` vào tiêu đề gói tin gửi đi.
 
-### 4.2. Khối API Sản phẩm (Product Endpoint)
+### 4.2. Khối API Xác thực & Người dùng (User Endpoint)
 
-| Mã Khẩu Lệnh (Method) | Đường dẫn (URL Endpoint) | Mục đích (Description) | Ai được gọi? | Data trả về (Response) |
-|-----------------------|--------------------------|------------------------|--------------|------------------------|
-| **GET**               | `/product/get-all`       | Trả về toàn bộ danh sách Hàng hóa cho người xem. Có hỗ trợ tham số lọc `?search=` | Khách hàng vãng lai | `[{ _id, name, price, stock }]` |
-| **GET**               | `/product/details/:id`   | Bấm vào 1 thẻ Sản phẩm, hệ thống mở hình ảnh mô tả ở trang chi tiết | Khách hàng vãng lai | `{ ProductModel object }` |
-| **POST**              | `/product/create`        | Tạo ra 1 món hàng mới (Bơm hàng vào kho) | **Admin** | `{ status: 'OK', message: 'Tạo thành công' }` |
-| **PUT**               | `/product/update/:id`    | Lưu lại chỉnh sửa thông tin (Đổi giá, thay tên, sửa ảnh) | **Admin** | `{ data_moi: ... }` |
-| **DELETE**            | `/product/delete/:id`    | Cho mặt hàng vào thùng rác tiêu hủy | **Admin** | `200 OK` |
+| Mã Khẩu Lệnh | Đường dẫn (URL) | Mục đích | Dữ liệu gửi (Request) |
+|--------------|-----------------|----------|-----------------------|
+| **POST** | `/user/sign-up` | Đăng ký tài khoản mới | `{ name, email, password, confirmPassword }` |
+| **POST** | `/user/sign-in` | Đăng nhập hệ thống | `{ email, password }` |
+| **GET**  | `/user/get-details/:id` | Xem hồ sơ cá nhân | Header Authorization |
+| **GET**  | `/user/get-all` | Xem toàn bộ DS người dùng (Admin) | Header Authorization `isAdmin` |
+
+### 4.3. Khối API Sản phẩm (Product Endpoint)
+
+| Mã Khẩu Lệnh | Đường dẫn (URL) | Mục đích | Ai được gọi? | Data trả về |
+|--------------|-----------------|----------|--------------|-------------|
+| **GET**      | `/product/get-all` | Lấy DS Hàng hóa, lọc `?search=` | Khách hàng | Mảng Object SP |
+| **GET**      | `/product/details/:id` | Xem chi tiết 1 sản phẩm | Khách hàng | 1 Object SP |
+| **POST**     | `/product/create` | Tạo mới sản phẩm | **Admin** | Message Status |
+| **PUT**      | `/product/update/:id` | Cập nhật giá, thông tin hình ảnh | **Admin** | Data SP mới |
+| **DELETE**   | `/product/delete/:id` | Xóa sản phẩm khỏi kho | **Admin** | Status OK |
 
 ### 4.3. Khối API Đơn hàng & Thanh Toán (Order Endpoint)
 

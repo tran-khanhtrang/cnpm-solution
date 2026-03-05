@@ -62,7 +62,7 @@ Dưới đây là thiết kế chi tiết các Kịch bản kiểm tra ở mức
 
 Để các kịch bản test diễn ra trơn tru mà không cần tốn hàng giờ đồng hồ ngồi gõ tay tạo từng tài khoản hay từng sản phẩm, dự án đã xây dựng riêng hệ thống bơm dữ liệu tự động:
 
-- **Bơm dữ liệu mồi (Database Seeding):** Đội ngũ đã viết sẵn một kịch bản code tên là `seedData.js`. Chỉ cần 1 cú click chuột, kịch bản này sẽ tự động "gieo hạt" vào MongoDB 20 người dùng, 50 mặt hàng đa dạng và 100 đơn hàng ảo phân bố trải đều về mặt thời gian xuyên suốt năm. Nhờ vậy mới có cái hiển thị ra để xem biểu đồ Doanh thu (Dashboard).
+- **Bơm dữ liệu mồi (Database Seeding):** Đội ngũ đã viết sẵn một kịch bản code tên là `seedData.js`. Chỉ cần 1 cú click chuột, kịch bản này sẽ tự động "gieo hạt" vào MongoDB **21 người dùng**, **500 sản phẩm** đa dạng và **50 đơn hàng** ảo phân bố trải đều về mặt thời gian xuyên suốt năm. Nhờ vậy mới có cái hiển thị ra để xem biểu đồ Doanh thu (Dashboard).
 - **Dữ liệu mồi giả (Mock Data tĩnh):** Ở Frontend (React), khi Backend rớt mạng, để lập trình viên không bị gián đoạn thiết kế giao diện, nhóm dùng một tệp `[{"ten": "Áo gió", "gia": 5000}]` giả lập dưới dạng tĩnh. Đây coi như một hình nộm để thử nghiệm mặt chữ có bị vỡ form hay không.
 - **Che giấu khuôn mặt (Data Anonymization):** Đối với các quy trình Export dữ liệu ra file Excel phục vụ việc kiểm thử công khai (như cho thầy giáo chấm trên TV), các thông tin nhạy cảm của khách như `Số điện thoại` hay `Mật khẩu băm` đã được cắt bớt hoặc hiển thị dấu sao `****` để mô phỏng tính trung thực bảo vệ quyền riêng tư người dùng.
 
@@ -116,3 +116,6 @@ Nhằm đảm bảo dự án không chỉ có giao diện đẹp, dùng đúng c
 ## 7. Kết luận & Đánh giá mức độ hoàn thiện
 
 Hệ thống trải qua **2 vòng kiểm thử** (Vòng 1: Kiểm thử chức năng & tích hợp; Vòng 2: Code Review & Penetration Test bảo mật nâng cao) với độ bao phủ tốt trên các luồng nghiệp vụ xương sống. Vòng kiểm thử thứ 2 (04/03/2026) phát hiện thêm **5 lỗi bảo mật/logic** (SEC_01 đến SEC_05) và **5 vấn đề chất lượng code** (CQ_01 đến CQ_05), trong đó **9/10 vấn đề đã được vá hoàn toàn** trước ngày bảo vệ. Các ngoại lệ (Edge Cases) đã được kiểm soát bởi các hàng rào chặn ở màn hình nhập liệu và ở tầng Backend Services. Dự án đạt độ ổn định rất cao để báo cáo nghiệm thu **(Phiên bản v1.1 — Patch Security)**.
+
+*Tài liệu được ghi lại và biên soạn bởi: Trần Khánh Trang (232248749) — với sự hỗ trợ của AI Assistant (Antigravity / Google DeepMind) — hỗ trợ triển khai thực tế ngày 05/03/2026.*
+*Dự án: Thủy Lợi N5 eCommerce — Nhóm 5, Học phần CNPM TLU 2025–2026.*

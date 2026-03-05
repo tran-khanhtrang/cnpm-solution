@@ -31,10 +31,24 @@ Với lợi thế thành viên nhóm, các vai trò được phân bổ như sau
 
 ## 3. Quy trình Quản lý Công việc & Source Code
 
-### 3.1 Quản lý Task Board (Sử dụng Trello / Jira / Github Projects)
+### 3.1 Quản lý Task Board (GitHub Projects)
 
-- Công việc được chia nhỏ từ các User Case thành nhiều Sub-task cụ thể (ví dụ: *Viết API Login*, *Dựng Form UI Component Login*, *Tích hợp API Login vào Redux*).
-- Board tiến độ sẽ có 4 cột chính: **Backlog (Chờ làm)** -> **To Do (Đang đưa vào Sprint)** -> **In Progress (Đang code)** -> **Done (Đã Review và Test xong)**.
+- **Công cụ thực tế:** Nhóm sử dụng **GitHub Projects** (tích hợp sẵn với repository GitHub) để quản lý và theo dõi tiến độ — không cần cài thêm công cụ ngoài. Các công cụ nâng cao hơn như Trello hoặc Jira phù hợp khi nhóm lớn hơn hoặc có nhiều sprint độc lập hơn.
+- Công việc được chia nhỏ từ các Use Case thành nhiều Sub-task cụ thể (ví dụ: *Viết API Login*, *Dựng Form UI Component Login*, *Tích hợp API Login vào Redux*).
+- Board tiến độ có 4 cột chính: **Backlog (Chờ làm)** → **To Do (Đang đưa vào Sprint)** → **In Progress (Đang code)** → **Done (Đã Review và Test xong)**.
+
+### 3.1.1 Definition of Done (DoD — Tiêu chí Hoàn thành)
+
+Một Task chỉ được chuyển sang cột **Done** khi đáp ứng đủ tất cả các tiêu chí sau:
+
+| # | Tiêu chí | Bắt buộc? |
+|---|---|---|
+| 1 | Code đã được merge vào nhánh `develop` thành công | ✅ Bắt buộc |
+| 2 | Ít nhất 1 thành viên khác đã review code (Peer Review) | ✅ Bắt buộc |
+| 3 | Không có lỗi nghiêm trọng (crash, 500 error) khi chạy thử | ✅ Bắt buộc |
+| 4 | API endpoint (nếu có) đã được test bằng PowerShell/Postman và trả đúng response | ✅ Bắt buộc |
+| 5 | Tài liệu liên quan (SRS, HLD, Test Cases) đã được cập nhật nếu có thay đổi | 🔶 Khuyến nghị |
+| 6 | Không còn debug `console.log` không cần thiết bị bỏ quên trong code | 🔶 Khuyến nghị |
 
 ### 3.2 Quy trình Quản lý Mã nguồn (Git / Github)
 
@@ -133,7 +147,7 @@ Do tính chất là phần mềm chạy trên nền tảng Web, yêu cầu về 
 - **Môi trường Cloud & Server (Triển khai dự kiến):**
   - **Database Hosting:** Sử dụng **MongoDB Atlas** (gói Free Cluster) để lưu trữ CSDL chung online, giúp mọi thành viên đều gọi được API mà không cần chạy DB Local.
   - **Dịch vụ lưu trữ ảnh:** Cloudinary (dùng để lưu ảnh sản phẩm dưới dạng chuỗi URL thay vì lưu file vật lý nặng nề xuống server).
-  - **Môi trường Test:** Các API được test cục bộ bằng Postman / ThunderClient, tích hợp kiểm thử trên các trình duyệt phổ biến (Google Chrome, Microsoft Edge).
+  - **Môi trường Test:** Các API được test cục bộ bằng **PowerShell (`Invoke-RestMethod`)** và **Postman / ThunderClient**, kiểm thử giao diện trên các trình duyệt phổ biến (Google Chrome, Microsoft Edge). Trong giai đoạn SQA nâng cao, nhóm sử dụng PowerShell để gửi HTTP request trực tiếp kiểm tra hành vi API mà không qua frontend.
 
 ## 6. Quản trị Rủi ro (Risk Management Specification)
 

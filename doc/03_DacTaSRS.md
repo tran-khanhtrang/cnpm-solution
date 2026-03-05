@@ -51,44 +51,47 @@ Lý do lựa chọn **Agile Scrum**:
 
 ## 5. Yêu cầu phi chức năng (Non-Functional Requirements)
 
+Tất cả các yêu cầu phi chức năng được định lượng cụ thể qua các chỉ số cam kết chất lượng dịch vụ (Service Level Agreement - SLA):
+
 - **Hiệu năng (Performance / Latency):**
-  - Tải trang danh mục sản phẩm mất < 2 giây. Web sử dụng React Query để fetch và cache dữ liệu, giảm thiểu thừa API Requests.
-  - Sử dụng cơ chế Rate Limiting API (express-rate-limit) tại cổng Backend phòng tránh nghẽn truy cập và DDoS nhẹ.
+  - **Thời gian phản hồi (Response Time):** Tải trang danh mục sản phẩm mất **< 2.5 giây** cho 95% lượng user truy cập (95th percentile). API tra cứu đơn hàng trả kết quả trong **< 500ms**.
+  - **Tối ưu Web:** Web sử dụng React Query để fetch và cache dữ liệu, giảm thiểu thừa API Requests; Lazy load hình ảnh để tiết kiệm băng thông.
+  - **Tải trọng (Load Capacity):** Chịu được tối đa **500 CCU** (Concurrent Users) cùng lúc truy cập mà không rớt mạng.
 - **Bảo mật (Security):**
-  - Toàn bộ secret strings và database string connections (DB URI), JWT Key giấu kín trong environment variables `.env`.
-  - Endpoint của admin chặn kỹ lưỡng qua Authorization header và Check Role middleware `isAdmin`.
-- **Khả năng mở rộng (Scalability & Maintainability):** Backend triển khai Controller - Service Pattern rõ ràng giúp mã nguồn rất gọn gàng. Có thể nâng cấp logic và dễ dàng chuyển thành Microservices hoặc Dockerize lên container platform về sau.
-- **Thân thiện người dùng (UX / Usability):** UI được đồng bộ design system từ thư viện Ant Design đem lại nét hiện đại, tối ưu responsive.
+  - Toàn bộ secret strings và database string connections (tên biến là `Mongo_DB`), JWT Key giấu kín trong environment variables `.env`.
+  - Endpoint của admin chặn kỹ lưỡng qua Authorization header và Check Role middleware `isAdmin`. Mật khẩu băm bằng Bcrypt với cost factor tối thiểu là `10`.
+- **Khả năng mở rộng (Scalability & Maintainability):**
+  - Backend triển khai Controller - Service Pattern rõ ràng, lỏng lẻo hóa sự phụ thuộc (Loose Coupling).
+  - Có thể containerization dự án bằng Docker (Dockerize) để scale ngang nhiều node trên môi trường Cloud thuần túy.
+- **Thân thiện người dùng (UX / Usability):**
+  - Đạt điểm > 80/100 trên Google Lighthouse Test cho hạng mục Accessibility và Best Practices. Giao diện Responsive hoạt động tốt trên Mobile (kích thước màn hình tối thiểu 375px) và Desktop.
 
-## 6. Biểu đồ Use Case Tổng quan
+## 6. Ma trận truy xuất nguồn gốc (Traceability Matrix)
 
-```mermaid
-flowchart LR
-    KhachHang("Khách hàng")
-    Admin("Quản trị viên (Admin)")
+Ma trận dưới đây thể hiện sự liên kết chặt chẽ giữa Yêu cầu chức năng (FR) và các luồng Use Case cụ thể (UC) được định nghĩa ở Giai đoạn 1:
 
-    subgraph UserSpace ["Không gian Khách hàng"]
-    UC1("Đăng nhập/Đăng ký tài khoản")
-    UC2("Tìm kiếm & Xem danh mục/sản phẩm")
-    UC3("Quản lý sản phẩm vào Giỏ hàng")
-    UC4("Checkout: Đặt hàng thanh toán")
-    end
-    
-    subgraph AdminSpace ["Biên giới Quản trị"]
-    UC5("Kiểm tra & Quản lý Sản phẩm")
-    UC6("Quản lý & Duyệt Đơn hàng")
-    UC7("Màn hình biểu đồ KPI Doanh thu")
-    UC8("Xuất Báo cáo Excel nội bộ")
-    end
-    
-    KhachHang --> UC1
-    KhachHang --> UC2
-    KhachHang --> UC3
-    KhachHang --> UC4
-    
-    Admin --> UC1
-    Admin --> UC5
-    Admin --> UC6
-    Admin --> UC7
-    Admin --> UC8
-```
+| ID Yêu Cầu (FR) | Tên Yêu Cầu Chức Năng | Liên kết Use Case (UC) | Phân hệ (Module) |
+|---|---|---|---|
+| FR_01 | Xác thực / Cấp quyền - Auth | UC-U01, UC-U02, UC-A01 | Hệ thống & Bảo mật |
+| FR_02 | Quản lý Giỏ hàng | UC-U06, UC-U07 | Trải nghiệm mua sắm |
+| FR_03 | Quản trị Sản phẩm | UC-A02, UC-A03, UC-A04, UC-A05 | Hàng hóa - Kho |
+| FR_04 | Quy trình Đặt hàng | UC-U08, UC-U09, UC-A06 | Bán hàng (Sales) |
+| FR_05 | Dashboard / Biểu đồ | UC-A07, UC-A08 | Kế toán - Báo cáo |
+| FR_06 | Trích xuất dữ liệu | UC-A09 | Kế toán - Báo cáo |
+
+## 7. Bảng Từ điển Thuật ngữ (Glossary)
+
+Để đảm bảo các bên liên quan (Khách hàng, Lập trình viên, Tester) có chung một cách hiểu khi đọc tài liệu:
+
+| Thuật ngữ / Viết tắt | Giải nghĩa chi tiết |
+|---|---|
+| **MERN Stack** | Bộ 4 công nghệ Javascript: MongoDB, ExpressJS, ReactJS, Node.js. |
+| **JWT** | JSON Web Token — Chuỗi ký tự mã hóa dùng để xác thực danh tính người dùng sau khi đăng nhập. |
+| **MVP** | Minimum Viable Product — Phiên bản sản phẩm tối thiểu, chỉ chứa các tính năng cốt lõi nhất để nhanh chóng tung ra thị trường kiểm chứng. |
+| **CCU** | Concurrent Users — Số lượng người dùng truy cập và thao tác đồng thời trên nền tảng tại cùng một thời điểm. |
+| **SLA** | Service Level Agreement — Cam kết chất lượng dịch vụ (ví dụ: tốc độ phản hồi phải dưới 2s). |
+| **CORS** | Cross-Origin Resource Sharing — Lỗi kỹ thuật chặn truy cập tài nguyên giữa các domain khác nhau. |
+| **Bcrypt** | Thuật toán băm mật khẩu ra các chuỗi vô nghĩa để hacker không thể giải mã ngược lại bản rõ. |
+
+---
+*(Ghi chú: Sơ đồ Use Case Diagram chi tiết vui lòng xem tại tài liệu `02_DacTaYeuCau_UseCases.md`)*

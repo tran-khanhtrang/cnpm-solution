@@ -11,7 +11,7 @@
 | **Ngày thực hiện** | 04/03/2026 — 05/03/2026 |
 | **Người thực hiện** | Trần Khánh Trang (232248749) — SQA |
 | **Hỗ trợ kiểm thử** | AI Code Review Agent (Antigravity — Google DeepMind) |
-| **Môi trường kiểm thử** | Local — Windows 11, Node.js v24, MongoDB 7, Chrome 132 |
+| **Môi trường kiểm thử** | Local — Windows 11, Node.js v20.19.1, MongoDB 8.x, Chrome 132 |
 | **Mục tiêu** | Rà soát bảo mật tổng thể + UAT các luồng nghiệp vụ chính sau vá lỗi |
 
 ---
@@ -33,7 +33,7 @@
 |---|---|
 | **PowerShell — `Invoke-RestMethod`** | Gửi HTTP request trực tiếp đến backend API để kiểm tra response mà không cần qua frontend |
 | **MongoDB Shell (`mongosh`)** | Truy vấn và xác minh dữ liệu trong database sau các thao tác CRUD |
-| **Chrome Browser (Playwright — Headless)** | Tự động hóa thao tác người dùng: điền form, click button, kiểm tra UI response |
+| **Chrome Browser (Playwright — Headless)** | Tự động hóa điều hướng trang, chụp screenshot UI để làm bằng chứng kiểm thử. *Lưu ý: Nhóm sử dụng kết hợp manual testing trực tiếp trên Chrome và Playwright cho phần automation screenshot — không phải fully headless.* |
 | **Nodemon + Node.js** | Giám sát server log realtime trong khi thực hiện test |
 | **Git Diff** | Xác minh chính xác những thay đổi mã nguồn đã được áp dụng |
 | **AI Code Review Agent** | Phân tích tĩnh mã nguồn quy mô lớn (toàn bộ codebase) — phát hiện bug pattern, anti-pattern và lỗ hổng bảo mật |

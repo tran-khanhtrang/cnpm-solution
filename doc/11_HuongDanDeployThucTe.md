@@ -1,6 +1,6 @@
 # HƯỚNG DẪN DEPLOY HỆ THỐNG THỰC TẾ (BIÊN BẢN TRIỂN KHAI — 05/03/2026)
 
-> **Ghi chú:** Tài liệu này ghi lại **toàn bộ quá trình triển khai thực tế** hệ thống Thủy Lợi N5 trên máy tính cá nhân (localhost), bao gồm từng bước Clone source code, cài đặt môi trường, kết nối CSDL, import dữ liệu và khắc phục các sự cố phát sinh. Được thực hiện vào ngày **05/03/2026** với sự hỗ trợ của AI Assistant (Antigravity / Google DeepMind).
+> **Ghi chú:** Tài liệu này ghi lại **toàn bộ quá trình triển khai thực tế** hệ thống Thủy Lợi N5 trên máy tính cá nhân (khanhtrang), bao gồm từng bước Clone source code, cài đặt môi trường, kết nối CSDL, import dữ liệu và khắc phục các sự cố phát sinh. Được thực hiện vào ngày **05/03/2026** với sự hỗ trợ của AI Assistant (Antigravity / Google DeepMind).
 
 ---
 
@@ -18,11 +18,13 @@
 | Frontend Port | 3000 |
 
 > **Lưu ý về hostname:** File `C:\Windows\System32\drivers\etc\hosts` đã được cấu hình sẵn:
+>
 > ```
 > 127.0.0.1   khanhtrang
 > ::1          khanhtrang
 > ```
-> Do đó `khanhtrang` và `localhost` đều trỏ về cùng một địa chỉ `127.0.0.1` trên máy này.
+>
+> Do đó tên miền `khanhtrang` sẽ đóng vai trò như `localhost` và cũng trỏ về địa chỉ `127.0.0.1` trên máy này.
 
 ---
 
@@ -36,6 +38,7 @@ git clone https://github.com/tran-khanhtrang/cnpm-solution.git
 ```
 
 **Kết quả đạt được:**
+
 - Tải về toàn bộ 800 objects (~113 MB), giải nén 509 files
 - Dự án được tạo tại `d:\CNPM\WIP\cnpm-solution`
 - Cấu trúc thư mục sau khi clone:
@@ -94,7 +97,8 @@ EMAIL_FROM=your_email@gmail.com
 ```
 
 > **Lưu ý quan trọng về MongoDB URI:**
-> - Dùng `127.0.0.1` thay vì `localhost` để tránh lỗi IPv6 resolution với Mongoose 6.x.
+>
+> - Dùng `127.0.0.1` thay vì `khanhtrang` để tránh lỗi IPv6 resolution với Mongoose 6.x.
 > - Trên máy này, cả hai đều hợp lệ (vì `khanhtrang` → `127.0.0.1` qua hosts file), nhưng `127.0.0.1` là chắc chắn nhất.
 > - Tên biến trong code là `Mongo_DB` (phân biệt hoa thường — phải viết đúng).
 
@@ -103,10 +107,11 @@ EMAIL_FROM=your_email@gmail.com
 Tạo file `.env` tại thư mục gốc của `fe-cnpm`:
 
 ```env
-REACT_APP_API_URL=http://localhost:3001/api
+REACT_APP_API_URL=http://khanhtrang:3001/api
 ```
 
 > **Đây là bước cực kỳ quan trọng!** Nếu thiếu file này, toàn bộ API call từ React sẽ bị lỗi:
+>
 > - `process.env.REACT_APP_API_URL` sẽ là `undefined`
 > - URL gọi API sẽ thành `/undefined/product/get-all` → frontend không lấy được dữ liệu dù backend đang chạy bình thường.
 
@@ -122,6 +127,7 @@ npm start
 Backend dùng `nodemon` để tự động restart khi có thay đổi code.
 
 **Kết quả kỳ vọng trên console:**
+
 ```
 [nodemon] starting `node src/index.js`
 Server is running on port: 3001
@@ -130,9 +136,10 @@ Connect Db success!
 
 > ⚠️ **Sự cố phát sinh & Cách khắc phục:** Lần đầu start, Mongoose báo lỗi `TopologyDescription type: Unknown` — không kết nối được MongoDB dù service đang chạy.
 >
-> **Nguyên nhân:** Khi đó file `.env` dùng `localhost` thay vì `127.0.0.1`. Trên một số hệ thống Windows, Node.js resolve `localhost` sang `::1` (IPv6) trong khi MongoDB chỉ lắng nghe trên `127.0.0.1` (IPv4).
+> **Nguyên nhân:** Khi đó file `.env` dùng `khanhtrang` thay vì `127.0.0.1`. Trên một số hệ thống Windows, Node.js resolve `khanhtrang` sang `::1` (IPv6) trong khi MongoDB chỉ lắng nghe trên `127.0.0.1` (IPv4).
 >
-> **Cách fix:** Đổi `Mongo_DB=mongodb://localhost:27017/...` thành `Mongo_DB=mongodb://127.0.0.1:27017/...`, sau đó gõ `rs` vào terminal nodemon để restart:
+> **Cách fix:** Đổi `Mongo_DB=mongodb://khanhtrang:27017/...` thành `Mongo_DB=mongodb://127.0.0.1:27017/...`, sau đó gõ `rs` vào terminal nodemon để restart:
+>
 > ```
 > rs
 > ```
@@ -142,6 +149,7 @@ Connect Db success!
 ## 6. Bước 5 — Import Dữ liệu vào MongoDB
 
 Dữ liệu xuất khẩu từ môi trường gốc được lưu tại `database/exported_data/` gồm 3 file JSON:
+
 - `users.json` — 21 tài khoản người dùng
 - `products.json` — 500 sản phẩm
 - `orders.json` — 50 đơn hàng
@@ -200,9 +208,11 @@ importData();
 ```
 
 > ⚠️ **Sự cố quan trọng — Extended JSON Format:** File JSON export từ MongoDB Compass lưu ObjectId và Date theo dạng Extended JSON:
+>
 > ```json
 > { "_id": { "$oid": "69a51ff8..." }, "createdAt": { "$date": "2026-03-02T..." } }
 > ```
+>
 > MongoDB driver không chấp nhận insert trực tiếp format này (lỗi: *`_id fields may not contain '$'-prefixed fields`*). Phải dùng hàm `convertEJSON()` để convert trước.
 
 ### 5.3. Chạy script
@@ -213,6 +223,7 @@ node import_data.js
 ```
 
 **Kết quả:**
+
 ```
 ✅ Kết nối MongoDB thành công!
 ✅ Import "users": 21 documents thành công
@@ -233,23 +244,28 @@ npm start
 > ⚠️ **Sự cố phát sinh — Module `ajv` không tương thích:**
 >
 > Khi chạy lần đầu, React Scripts báo lỗi:
+>
 > ```
 > Cannot find module 'ajv/dist/compile/codegen'
 > ```
+>
 > **Nguyên nhân:** Xung đột version giữa `ajv` (v6 vs v8) trong chuỗi phụ thuộc `webpack-dev-server → schema-utils → ajv-keywords`.
 >
 > **Cách fix:**
+>
 > ```powershell
 > npm install ajv@^8 --legacy-peer-deps
 > ```
+>
 > Sau đó chạy lại `npm start`.
 
 **Kết quả kỳ vọng:**
+
 ```
 Compiled successfully!
 
 You can now view thuyloi-n5 in the browser.
-  Local:  http://localhost:3000
+  Local:  http://khanhtrang:3000
 ```
 
 ---
@@ -257,17 +273,21 @@ You can now view thuyloi-n5 in the browser.
 ## 8. Bước 7 — Kiểm tra & Khắc phục: Frontend không hiển thị dữ liệu
 
 ### Triệu chứng
+
 Sau khi cả backend lẫn frontend đều chạy, trang chủ load được nhưng **không hiển thị sản phẩm**. React Query DevTools cho thấy `Data: null`.
 
 ### Phân tích nguyên nhân
 
 1. **Kiểm tra API backend trực tiếp** bằng PowerShell:
+
    ```powershell
-   Invoke-RestMethod -Uri "http://localhost:3001/api/product/get-all?limit=6" -Method GET
+   Invoke-RestMethod -Uri "http://khanhtrang:3001/api/product/get-all?limit=6" -Method GET
    ```
+
    → **Backend trả về 500 sản phẩm bình thường** (status: OK).
 
 2. **Kiểm tra frontend service** (`fe-cnpm/src/services/ProductService.js`):
+
    ```javascript
    // Tất cả API call đều dùng biến môi trường:
    axios.get(`${process.env.REACT_APP_API_URL}/product/get-all?limit=${limit}`)
@@ -294,8 +314,8 @@ npm start
 
 | Dịch vụ | Trạng thái | URL / Địa chỉ |
 |---|---|---|
-| Backend API (Node.js) | ✅ Running | `http://localhost:3001` |
-| Frontend (React) | ✅ Running | `http://localhost:3000` |
+| Backend API (Node.js) | ✅ Running | `http://khanhtrang:3001` |
+| Frontend (React) | ✅ Running | `http://khanhtrang:3000` |
 | MongoDB | ✅ Connected | `127.0.0.1:27017/thuyloi-n5` |
 | Users | ✅ Imported | 21 tài khoản |
 | Products | ✅ Imported | 500 sản phẩm |
@@ -310,8 +330,8 @@ npm start
 
 ### Đường dẫn truy cập
 
-- 🌐 **Trang chủ:** `http://localhost:3000`
-- 🔧 **Admin Dashboard:** `http://localhost:3000/system/admin`
+- 🌐 **Trang chủ:** `http://khanhtrang:3000`
+- 🔧 **Admin Dashboard:** `http://khanhtrang:3000/system/admin`
 
 ---
 
@@ -319,7 +339,7 @@ npm start
 
 | # | Sự cố | Nguyên nhân | Cách khắc phục |
 |---|---|---|---|
-| 1 | Backend không kết nối MongoDB | `localhost` resolve sang IPv6 (`::1`), MongoDB chỉ listen IPv4 | Đổi URI sang `127.0.0.1` |
+| 1 | Backend không kết nối MongoDB | `khanhtrang` resolve sang IPv6 (`::1`), MongoDB chỉ listen IPv4 | Đổi URI sang `127.0.0.1` |
 | 2 | `mongoimport` không tìm thấy | Chỉ cài MongoDB Server, không có MongoDB Database Tools | Dùng Node.js script thay thế |
 | 3 | Import lỗi `$oid not valid for storage` | File JSON dùng Extended JSON format, không phải JSON thuần | Viết hàm `convertEJSON()` để convert trước khi insert |
 | 4 | Frontend lỗi `ajv/dist/compile/codegen` | Xung đột version `ajv` trong `webpack-dev-server` | `npm install ajv@^8 --legacy-peer-deps` |
