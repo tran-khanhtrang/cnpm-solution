@@ -55,6 +55,7 @@ Hệ thống tài liệu đầy đủ được lưu trữ trong thư mục `doc/
 7. [Hướng dẫn Triển khai](doc/07_HuongDanTrienKhai.md) - Hướng dẫn cài đặt, cấu hình môi trường và triển khai Hosting.
 8. [Đánh giá & Rút kinh nghiệm](doc/08_DanhGiaVaRutKinhNghiem.md) - Tổng kết dự án, đánh giá rủi ro và bài học kinh nghiệm.
 9. [Kịch bản Thuyết trình](doc/09_KichBanSlideTrinhBay.md) - Kịch bản trình bày báo cáo đồ án.
+10. [📋 SQA & UAT Test Log — Biên bản Kiểm thử](doc/10_SQA_UAT_TestLog.md) - **Biên bản kiểm thử chất lượng phần mềm (SQA) và nghiệm thu (UAT)** — ghi đầy đủ phương pháp, công cụ, kết quả từng test case, log HTTP response, screenshot bằng chứng. Bao gồm Security Patch v1.1 (5 lỗ hổng bảo mật đã vá) và 6 kịch bản UAT End-to-End.
 
 *(Ngoài ra: Có thể xem các bản định dạng Word tại thư mục `doc/docx/` và Slide thuyết trình tại `doc/slides/`)*
 
