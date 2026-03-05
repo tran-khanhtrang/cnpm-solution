@@ -1,4 +1,4 @@
-# Thủy Lợi N5 eCommerce Project (CNPM Sofware Process Demo Project - Nhóm học viên số 5, Học phần CNPM TLU 2025-2026)
+# Thủy Lợi N5 Project (CNPM Sofware Process Demo Project - Nhóm học viên số 5, Học phần CNPM TLU 2025-2026)
 
 Dự án Hệ thống Thương mại điện tử "Thủy Lợi N5" được xây dựng với React (Frontend) và Node.js + MongoDB (Backend). Dự án đã được tích hợp bộ dữ liệu phong phú cùng với các báo cáo KPI chuyên nghiệp phục vụ cho mục đích Demo và Đánh giá môn học.
 
@@ -25,7 +25,16 @@ Dự án Hệ thống Thương mại điện tử "Thủy Lợi N5" được xâ
   - *Biểu đồ Top Customers:* Hiển thị thông tin tổng hợp Top 10 khách hàng có sức mua lớn nhất, tích hợp Sorting "Theo tổng tiền" hoặc "Theo số lượng đơn".
   - *Biểu đồ Top Selling:* Top 5 Sản phẩm bán chạy nhất hệ thống hiển thị cùng hàng ngang giúp tăng trải nghiệm tra cứu cho Admin .
 
-### 3. 🔒 Vá lỗi Bảo mật & Chất lượng Code (Security Patch v1.1 — 04/03/2026)
+### 3. 🎓 Kỹ nghệ Phần mềm & Báo cáo Học thuật (Chuẩn IEEE)
+
+Dự án không chỉ là một ứng dụng Web hoạt động được, mà còn đi kèm bộ Hồ sơ Thiết kế & Triển khai (System Documentation) đạt chuẩn thực chiến cho quy trình SDLC:
+
+- **Định lượng & Metric rõ ràng:** Xác định SLA (Response Time < 2.5s), Ma trận truy xuất nguồn gốc (Traceability Matrix), UAT Pass Rate đạt **93.75%**.
+- **Mô hình hóa trực quan (Mermaid Diagrams):** Toàn bộ tài liệu được minh họa bằng HTML/Markdown nhúng trực tiếp sơ đồ: Use Case, BPMN (AS-IS vs TO-BE), Component Diagram, Deployment Network và JWT Auth Flow.
+- **Quy trình Agile chuẩn chỉ:** Khống chế chất lượng bằng tiêu chuẩn Definition of Done (DoD), khung đánh giá Retrospective bài bản theo format **4Ls** (Liked, Learned, Lacked, Longed for).
+- **Cẩm nang Triển khai (Troubleshooting FAQ):** Soạn thảo sẵn Checklist Pre-flight kiểm duyệt và list Xử lý sự cố môi trường cực chi tiết (Khắc phục lỗi MongoDB IPv6, xung đột thư viện `ajv`).
+
+### 4. 🔒 Vá lỗi Bảo mật & Chất lượng Code (Security Patch v1.1 — 04/03/2026)
 
 Trước thời điểm bảo vệ đồ án, nhóm đã thực hiện **vòng rà soát mã nguồn tổng thể (Code Review Round 2)** và phát hiện, vá các lỗi kỹ thuật sau:
 
@@ -59,21 +68,23 @@ Hệ thống tài liệu đầy đủ được lưu trữ trong thư mục `doc/
 
 *(Ngoài ra: Có thể xem các bản định dạng Word tại thư mục `doc/docx/` và Slide thuyết trình tại `doc/slides/`)*
 
-## Cài đặt và Khởi chạy
+## 🚀 Cài đặt và Khởi chạy (Local Development)
 
-Dự án chia làm 2 thư mục chính là Backend (`be-cnpm`) và Frontend (`fe-cnpm`). Đảm bảo MongoDB của bạn đã được bật ở `khanhtrang:27017` trước khi chạy.
+Dự án chia làm 2 module độc lập là Backend (`be-cnpm`) và Frontend (`fe-cnpm`). Để tạo cảm giác làm việc như trên Virtual Server thực thụ, nhóm giả lập truy cập qua tên miền ảo `khanhtrang` thay cho `localhost` truyền thống.
 
-### Backend (`be-cnpm`)
+*(Yêu cầu: Map `127.0.0.1 khanhtrang` trong file `C:\Windows\System32\drivers\etc\hosts` và đảm bảo MongoDB đang nghe tại `127.0.0.1:27017`)*.
+
+### ⚙️ Backend (`be-cnpm`)
 
 ```bash
 cd be-cnpm
 npm install
-npm start
+npm run start
 ```
 
-*Backend sẽ chạy tại khanhtrang:3001*
+*Backend RESTful API sẽ khởi chạy ngầm tại `http://khanhtrang:3001`.*
 
-### Frontend (`fe-cnpm`)
+### 🖥️ Frontend (`fe-cnpm`)
 
 ```bash
 cd fe-cnpm
@@ -81,8 +92,12 @@ npm install
 npm start
 ```
 
-*Frontend sẽ chạy tại khanhtrang:3000*. Có thể truy cập chức năng hệ thống thông qua `http://khanhtrang:3000/system/admin`.
+*Giao diện UI React sẽ khởi chạy tại `http://khanhtrang:3000`*.
+Từ trình duyệt, bạn có thể truy cập Web bán hàng chính hoặc khu vực dành cho **Quản trị viên (Admin Dashboard)** qua đường dẫn `http://khanhtrang:3000/system/admin`.
 
-*Ghi chú: Để vào được Dashboard quản lý, vui lòng đăng nhập quyền Admin với thông tin mặc định: `trangtk.ftu@gmail.com` | Password: `n5admin@175tayson`.*
+> Ghi chú: Để vào được Dashboard quản lý, vui lòng đăng nhập Cổng xác thực với tài khoản Administrator định sẵn:
+>
+> - **Tài khoản:** `trangtk.ftu@gmail.com`
+> - **Mật khẩu:** `n5admin@175tayson`
 
 *Người viết: Trần Khánh Trang, 32CNTT21, 218248749
