@@ -31,11 +31,13 @@ Với lợi thế thành viên nhóm, các vai trò được phân bổ như sau
 
 ## 3. Quy trình Quản lý Công việc & Source Code
 
-### 3.1 Quản lý Task Board (GitHub Projects)
+### 3.1 Quản lý Task Board (Microsoft Planner)
 
-- **Công cụ thực tế:** Nhóm sử dụng **GitHub Projects** (tích hợp sẵn với repository GitHub) để quản lý và theo dõi tiến độ — không cần cài thêm công cụ ngoài. Các công cụ nâng cao hơn như Trello hoặc Jira phù hợp khi nhóm lớn hơn hoặc có nhiều sprint độc lập hơn.
+- **Công cụ thực tế:** Nhóm sử dụng **[Microsoft Planner](https://planner.cloud.microsoft/webui/plan/GtzRpuskJUiZlN8bdX7wm8gAAbVr/view/board?tid=bbf9aad6-5f58-4387-927e-02f0b07a72fa)** làm công cụ quản lý dự án chính. Đây là hệ sinh thái trực quan hỗ trợ phân việc, chia tiến độ trực tiếp, giúp việc phân bổ nhân sự và theo dõi thời hạn các thẻ công việc (Cards) của Sprint trở nên dễ dàng và đồng bộ.
 - Công việc được chia nhỏ từ các Use Case thành nhiều Sub-task cụ thể (ví dụ: *Viết API Login*, *Dựng Form UI Component Login*, *Tích hợp API Login vào Redux*).
-- Board tiến độ có 4 cột chính: **Backlog (Chờ làm)** → **To Do (Đang đưa vào Sprint)** → **In Progress (Đang code)** → **Done (Đã Review và Test xong)**.
+- Board tiến độ có các cột Bucket chính liên thông quy trình Kanban kéo thả trực quan như: **To Do (Chờ làm)** → **In Progress (Đang code)** → **Done (Đã Review và Test xong)**, thiết lập nhãn (Labels) cho từng loại Bug/Tính năng.
+
+![Bảng Quản lý Dự án Microsoft Planner](images/Plan.jpg)
 
 ### 3.1.1 Definition of Done (DoD — Tiêu chí Hoàn thành)
 
