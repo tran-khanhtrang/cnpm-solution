@@ -8,7 +8,28 @@
 
 ---
 
-## 2. Sơ đồ Use Case (Use Case Diagram)
+## 2. Product Backlog
+
+Dưới đây là bảng Product Backlog tổng hợp các yêu cầu người dùng dưới dạng User Stories, được sắp xếp theo mức độ ưu tiên để phục vụ lập kế hoạch cho các Sprint trong quy trình Agile Scrum.
+
+| ID | User Story (Câu chuyện người dùng) | Mức ưu tiên | Trạng thái | Tham chiếu |
+|:---|:---|:---:|:---:|:---|
+| **ST-01** | Là một **Guest**, tôi muốn **xem danh sách & chi tiết sản phẩm**, để tôi có thể tham khảo thông tin trước khi mua. | Cao | Sẵn sàng | UC-U03, UC-U05 |
+| **ST-02** | Là một **Guest**, tôi muốn **tìm kiếm & lọc sản phẩm**, để tôi nhanh chóng tìm thấy món đồ mình cần theo nhu cầu. | Trung bình | Sẵn sàng | UC-U04 |
+| **ST-03** | Là một **Guest**, tôi muốn **thêm sản phẩm vào giỏ hàng**, để tôi có thể gom nhiều món đồ lại trước khi quyết định mua. | **Rất cao** | Sẵn sàng | UC-U06 |
+| **ST-04** | Là một **User**, tôi muốn **đăng ký và đăng nhập**, để tôi có thể bảo mật thông tin cá nhân và thực hiện mua hàng. | **Rất cao** | Sẵn sàng | UC-U01, UC-U02 |
+| **ST-05** | Là một **User**, tôi muốn **thực hiện đặt hàng (Checkout)**, để tôi có thể gửi yêu cầu mua hàng đến hệ thống. | **Rất cao** | Sẵn sàng | UC-U08 |
+| **ST-06** | Là một **Admin**, tôi muốn **quản lý danh mục sản phẩm (CRUD)**, để tôi luôn cập nhật được các mẫu mã mới và giá cả. | Cao | Sẵn sàng | UC-A02 -> UC-A05 |
+| **ST-07** | Là một **Admin**, tôi muốn **xác nhận và quản lý đơn hàng**, để tôi có thể điều phối việc giao hàng cho khách. | **Rất cao** | Sẵn sàng | UC-A06 |
+| **ST-08** | Là một **Admin**, tôi muốn **theo dõi biểu đồ doanh thu & KPI**, để tôi nắm bắt được tình hình tăng trưởng của cửa hàng. | Cao | Sẵn sàng | UC-A07, UC-A08 |
+| **ST-09** | Là một **User**, tôi muốn **đánh giá & bình luận sản phẩm**, để tôi đóng góp ý kiến và giúp người mua sau tham khảo. | Thấp | Giai đoạn 2 | UC-U11 |
+| **ST-10** | Là một **User**, tôi muốn **áp dụng mã giảm giá (Voucher)**, để tôi được hưởng các chương trình ưu đãi từ cửa hàng. | Trung bình | Giai đoạn 2 | UC-U13 |
+| **ST-11** | Là một **Admin**, tôi muốn **xuất báo cáo ra file Excel**, để tôi có thể lưu trữ và làm việc với dữ liệu ngoại tuyến. | Trung bình | Sẵn sàng | UC-A09 |
+| **ST-12** | Là một **Admin**, tôi muốn **nhận cảnh báo khi tồn kho thấp**, để tôi kịp thời nhập thêm hàng, tránh gián đoạn kinh doanh. | Thấp | Giai đoạn 2 | UC-A10 |
+
+---
+
+## 3. Sơ đồ Use Case (Use Case Diagram)
 
 ```mermaid
 flowchart LR
@@ -55,7 +76,7 @@ flowchart LR
 
 ---
 
-## 3. Danh sách Use Case - Giai đoạn 1 (Phase 1)
+## 4. Danh sách Use Case - Giai đoạn 1 (Phase 1)
 
 ### 3.1. Nhóm chức năng Khách hàng vãng lai (Guest - Chưa đăng nhập)
 
@@ -95,7 +116,7 @@ flowchart LR
 
 ---
 
-## 4. Đặc tả chi tiết Use Case (Use Case Specification)
+## 5. Đặc tả chi tiết Use Case (Use Case Specification)
 
 Dưới đây là đặc tả luồng sự kiện (Flow of Events) cho 3 luồng chức năng quan trọng nhất của hệ thống phục vụ thiết kế Backend và Unit Test.
 
@@ -147,7 +168,7 @@ Dưới đây là đặc tả luồng sự kiện (Flow of Events) cho 3 luồng
 
 ---
 
-## 5. Danh sách Use Case - Giai đoạn 2 (Phase 2 - Mở rộng tương lai)
+## 6. Danh sách Use Case - Giai đoạn 2 (Phase 2 - Mở rộng tương lai)
 
 - **UC-U11 (Đánh giá & Bình luận):** Khách hàng đã mua hàng thành công có thể rate từ 1-5 sao và để lại review vào sản phẩm tương ứng.
 - **UC-U12 (Gợi ý sản phẩm đồ họa):** Website tự động gợi ý thêm sản phẩm cùng danh mục.
@@ -157,4 +178,3 @@ Dưới đây là đặc tả luồng sự kiện (Flow of Events) cho 3 luồng
 - **UC-A10 (Cảnh báo Tồn kho):** Nhận được alert cảnh báo nguy cơ hết hàng kho.
 - **UC-A11 (Quản lý Khuyến mãi/Vouchers):** Khả năng tùy chỉnh tạo mã voucher giảm giá, giới hạn.
 - **UC-A12 (Phân quyền nâng cao Role-Based):** Admin chia quyền bảo vệ (Super Admin, Order Manager...).
-- **UC-A13 (Chat trực tuyến hỗ trợ):** Có pop-up kết nối để tư vấn khách hàng ngay lập tức.
