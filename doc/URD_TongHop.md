@@ -150,6 +150,7 @@ Dựa trên nhận diện thực trạng, nhóm đã lập ra bảng Phân tích
 - Bảo mật: Các thông tin nhạy cảm của người dùng (Credit token, Mật khẩu hệ thống) được mã hoá với Bcrypt và khóa bí mật lưu cục bộ dưới biến môi trường `.env`.
 - Mã nguồn Back-End cần thiết kế theo luồng Controller-Service-Model chặt chẽ (Loose coupling/Mongoose ORM).
 - Áp dụng các Sprint của quy trình Agile Scrum cho phép đội ngũ bảo trì và có thể phát triển thêm Phase 2 dễ dàng (Đánh giá hạng sao Review, Mã Voucher Sale Giảm Giá, Gửi Email báo tự động).
+- Toàn bộ tiến độ dự án và các đầu mục công việc (Task Backlog) được quản lý trực quan, đồng bộ bằng nền tảng **Microsoft Planner**.
 
 ### 3.5 Dự tính mức độ tải và dung lượng hệ thống (System Sizing)
 
