@@ -28,3 +28,14 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Reference Projects (Local only)
+urd/MERN-ECommerce-Full-Stack-Project/
+urd/mern-e-commerce-boilerplate/
+doc/docx - format/template/
+
+# Temporary Files
+**/~$*.docx
+**/~$*.xlsx
+**/~$*.pptx
+
