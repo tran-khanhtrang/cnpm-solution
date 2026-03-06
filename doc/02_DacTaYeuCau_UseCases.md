@@ -57,22 +57,29 @@ flowchart LR
 
 ## 3. Danh sách Use Case - Giai đoạn 1 (Phase 1)
 
-### 3.1. Nhóm chức năng Khách hàng (User)
+### 3.1. Nhóm chức năng Khách hàng vãng lai (Guest - Chưa đăng nhập)
+
+| Mã UC | Tên Use Case | Phân hệ | Mức ưu tiên | Mô tả |
+|-------|--------------|---------|-------------|-------|
+| UC-U03 | Xem danh sách SP | Cửa hàng | Cao | Hiển thị tất cả các sản phẩm có trên gian hàng |
+| UC-U04 | Tìm kiếm & Lọc SP | Cửa hàng | Trung bình | Nhập từ khóa để tìm sản phẩm hoặc lọc nâng cao |
+| UC-U05 | Xem chi tiết SP | Cửa hàng | Cao | Hiển thị hình ảnh, giá, mô tả sản phẩm |
+| UC-U06 | Thêm vào giỏ hàng cục bộ | Giỏ hàng | **Rất cao** | Thêm sản phẩm vào giỏ, tùy chỉnh số lượng (Không thể checkout) |
+| UC-U07 | Xem & Sửa giỏ hàng | Giỏ hàng | Cao | Xem và chỉnh sửa danh sách sản phẩm sắp mua |
+| UC-U10 | Xem trang Giới thiệu | Thông tin | Thấp | Xem thông tin về nhóm phát triển Thủy Lợi N5 |
+
+### 3.2. Nhóm chức năng Khách hàng (User - Đã đăng nhập)
+
+*Ghi chú: Khách hàng User được kế thừa toàn bộ các chức năng khám phá và giỏ hàng của Guest.*
 
 | Mã UC | Tên Use Case | Phân hệ | Mức ưu tiên | Mô tả |
 |-------|--------------|---------|-------------|-------|
 | UC-U01 | Đăng ký tài khoản | Xác thực | Cao | Đăng ký với email, mật khẩu |
 | UC-U02 | Đăng nhập | Xác thực | **Rất cao** | Đăng nhập bằng tài khoản và mật khẩu |
-| UC-U03 | Xem danh sách SP | Cửa hàng | Cao | Hiển thị tất cả các sản phẩm có trên gian hàng |
-| UC-U04 | Tìm kiếm & Lọc SP | Cửa hàng | Trung bình | Nhập từ khóa để tìm sản phẩm hoặc lọc nâng cao |
-| UC-U05 | Xem chi tiết SP | Cửa hàng | Cao | Hiển thị hình ảnh, giá, mô tả sản phẩm |
-| UC-U06 | Thêm vào giỏ hàng | Giỏ hàng | **Rất cao** | Thêm sản phẩm vào giỏ, tùy chỉnh số lượng |
-| UC-U07 | Xem & Sửa giỏ hàng | Giỏ hàng | Cao | Xem và chỉnh sửa danh sách sản phẩm sắp mua |
 | UC-U08 | Đặt hàng (Checkout) | Mua hàng | **Rất cao** | Nhập thông tin giao hàng và xác nhận mua hàng |
 | UC-U09 | Xem lịch sử đơn hàng | Mua hàng | Trung bình | Theo dõi các đơn hàng đã đặt và trạng thái |
-| UC-U10 | Xem trang Giới thiệu | Thông tin | Thấp | Xem thông tin về nhóm phát triển Thủy Lợi N5 |
 
-### 3.2. Nhóm chức năng Quản trị (Admin)
+### 3.3. Nhóm chức năng Quản trị (Admin)
 
 | Mã UC | Tên Use Case | Phân hệ | Mức ưu tiên | Mô tả |
 |-------|--------------|---------|-------------|-------|

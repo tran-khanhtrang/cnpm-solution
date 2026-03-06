@@ -66,7 +66,24 @@ Tất cả các yêu cầu phi chức năng được định lượng cụ thể
 - **Thân thiện người dùng (UX / Usability):**
   - Đạt điểm > 80/100 trên Google Lighthouse Test cho hạng mục Accessibility và Best Practices. Giao diện Responsive hoạt động tốt trên Mobile (kích thước màn hình tối thiểu 375px) và Desktop.
 
-## 6. Ma trận truy xuất nguồn gốc (Traceability Matrix)
+## 6. Dự tính mức độ tải và dung lượng hệ thống (System Sizing)
+
+Dự toán tài nguyên (Sizing) nhằm đảm bảo hệ thống duy trì tính sẵn sàng cao không bị gián đoạn, tối ưu chi phí hạ tầng trong giai đoạn đầu và có thể tự động co giãn (Auto-scaling) ở giai đoạn sau.
+
+**1. Sizing theo Lượng truy cập (Traffic & Computing CPU/RAM):**
+
+- **Traffic dự kiến:** Trung bình 5.000 - 10.000 lượt truy cập/ngày (DAU). Khung giờ cao điểm (Peak Time) chịu tải được khoảng 500 CCU đồng thời.
+- **Tùy chọn Server Backend:** Node.js chạy dạng non-blocking. Cấu hình đề xuất tối thiểu 1 vCPU, 2GB RAM cho máy chủ Ứng dụng.
+- **Băng thông mạng (Bandwidth):** Lớp giao diện (Frontend React) được đóng gói và đặt tại Edge CDN của nền tảng Vercel giúp giảm hao tổn băng thông tĩnh, phân tải máy chủ gốc (Origin Server).
+
+**2. Sizing theo Dung lượng lưu trữ (Database & Media Storage):**
+
+- **Dữ liệu dạng văn bản (MongoDB JSON Storage):** Lưu hồ sơ User, log Giao dịch đơn hàng, Catalog Sản phẩm. MongoDB Atlas gói 512MB - 1GB là đủ để chứa đến hàng chục nghìn lượt mua sắm mới mỗi tháng, vì JSON text cực kỳ tiết kiệm bộ nhớ.
+- **Dữ liệu tập tin lớn (Media lưu trữ hình ảnh):**
+  - Thay vì lưu thẳng ảnh sản phẩm vào Database khiến máy chủ DB nặng, các file ảnh (Banners, Sản phẩm) tải lên qua hệ thống lưu trữ đối tượng bên thứ ba, điển hình là Cloudinary chuyên dụng.
+  - Sizing ước chừng với kho 5.000 sản phẩm (mỗi cái 2-3 ảnh), sử dụng chuẩn nén `.WebP` size ~150kb, chi phí lưu trữ ảnh dao động ở mức 2GB - 5GB giai đoạn đầu tiên xây dựng.
+
+## 7. Ma trận truy xuất nguồn gốc (Traceability Matrix)
 
 Ma trận dưới đây thể hiện sự liên kết chặt chẽ giữa Yêu cầu chức năng (FR) và các luồng Use Case cụ thể (UC) được định nghĩa ở Giai đoạn 1:
 

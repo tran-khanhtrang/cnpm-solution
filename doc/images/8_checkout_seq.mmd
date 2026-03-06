@@ -1,0 +1,25 @@
+sequenceDiagram
+    participant U as User (Frontend)
+    participant C as Order Controller (Backend)
+    participant S as Order Service
+    participant DB as MongoDB
+    
+    U->>C: POST `api/order/create` (Req_Body chứa thông tin Giỏ Hàng)
+    activate C
+    C->>S: createOrder(Req.body.data)
+    activate S
+    S->>DB: Kiểm tra số lượng tồn kho từng item (`countInStock`)
+    DB-->>S: Trả về trạng thái Inventory
+    
+    alt Không đủ tồn kho (Out of Stock)
+        S-->>C: Data báo Lỗi "Hết hàng"
+        C-->>U: Trả HTTP 400 - Failed status (SP không đủ hàng bán)
+    else Tồn kho đầy đủ (Sufficient)
+        S->>DB: Trừ đi lượng hàng đã đặt (Update Product Inventory)
+        S->>DB: Lưu Đơn hàng mới (Insert new Order record)
+        DB-->>S: Trạng thái Order created OK.
+        S-->>C: Load dữ liệu hóa đơn kết quả mới nhất
+        C-->>U: Trả HTTP 200 - OK, Xóa Cache trên Frontend Giỏ hàng.
+    end
+    deactivate S
+    deactivate C

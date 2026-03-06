@@ -1,0 +1,37 @@
+erDiagram
+    USER ||--o{ ORDER : "tạo (đặt) nhiều"
+    ORDER }o--|{ PRODUCT : "chứa/bao gồm nhiều"
+    
+    USER {
+        ObjectID _id PK
+        String name
+        String email "Mới & Duy nhất"
+        String password "Đã băm mã hóa"
+        Boolean isAdmin "Mặc định: false"
+        String phone
+        String address
+    }
+    
+    PRODUCT {
+        ObjectID _id PK
+        String name "Duy nhất"
+        String image "Link ảnh URL"
+        String type "Danh mục"
+        Number price "Giá bán"
+        Number countInStock "Lượng hàng tồn"
+        Number rating "Trung bình sao"
+        String description
+        Number discount
+    }
+    
+    ORDER {
+        ObjectID _id PK
+        ObjectID user_id FK "Chỉ tới User"
+        List orderItems "Chứa List Product"
+        Object shippingAddress
+        String paymentMethod
+        Number totalPrice
+        Boolean isPaid
+        Boolean isDelivered
+        Date createdAt "Thời gian tự sinh"
+    }

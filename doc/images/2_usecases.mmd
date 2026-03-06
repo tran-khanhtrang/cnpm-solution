@@ -1,0 +1,36 @@
+flowchart LR
+    %% Actors
+    G((Guest))
+    U((User))
+    A((Admin))
+
+    %% User Cases
+    subgraph "Hệ thống Website Thủy Lợi N5"
+        UC_View[Xem danh sách & Chi tiết SP]
+        UC_Search[Tìm kiếm & Lọc SP]
+        UC_Cart[Quản lý giỏ hàng]
+        
+        UC_Auth[Đăng nhập / Đăng ký]
+        UC_Checkout[Đặt mua hàng]
+        UC_History[Xem lịch sử đơn hàng]
+
+        UC_ManageProd[Quản lý Sản phẩm]
+        UC_ManageUser[Quản lý Người dùng]
+        UC_ManageOrder[Duyệt Đơn hàng]
+        UC_Dashboard[Xem Báo cáo Doanh thu]
+    end
+
+    G --> UC_View
+    G --> UC_Search
+    G --> UC_Cart
+    G --> UC_Auth
+
+    U -- "Kế thừa" -.-> G
+    U --> UC_Checkout
+    U --> UC_History
+
+    A --> UC_Auth
+    A --> UC_ManageProd
+    A --> UC_ManageUser
+    A --> UC_ManageOrder
+    A --> UC_Dashboard

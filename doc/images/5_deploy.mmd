@@ -1,0 +1,5 @@
+graph LR
+    User[Trình duyệt / Người dùng] -->|HTTP/HTTPS| Internet((Internet))
+    Internet -->|Cổng 3000| FE[Frontend: Vercel / Netlify]
+    Internet -->|Cổng 3001| BE[Backend: Render / Railway]
+    BE -->|Connection String| DB[(MongoDB Atlas Cloud)]

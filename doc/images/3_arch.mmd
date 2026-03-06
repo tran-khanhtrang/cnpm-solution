@@ -1,0 +1,4 @@
+graph TD
+    Browser[Trình duyệt Khách hàng] -->|Render| UI[Frontend App - ReactJS / Redux]
+    UI <--> |HTTP Requests / JSON / REST| API[Backend RESTful API - Node.js/Express]
+    API <--> |Mongoose ODM| DB[(Database - MongoDB)]

@@ -1,0 +1,8 @@
+graph TD
+    App[App.js Root] --> Router[React Router]
+    Router --> Layout[Layout Mặc định / Admin Layout]
+    Layout --> Header[Header Component]
+    Layout --> Footer[Footer Component]
+    Layout --> Pages[Pages: Home, Product, Cart, Admin KPI]
+    Pages --> UI[UI Core: AntD Table, Drawer, Modal]
+    Pages --> Services[HTTP Client - Axios]

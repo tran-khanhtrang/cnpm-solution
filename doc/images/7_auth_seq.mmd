@@ -1,0 +1,26 @@
+sequenceDiagram
+    participant U as Client (ReactJS)
+    participant A as Auth API (Node.js)
+    participant DB as MongoDB
+    
+    U->>A: POST `/user/sign-in` (email, password)
+    A->>DB: Tìm User theo email
+    DB-->>A: User record (kèm băm password)
+    A->>A: Bcrypt compare hash mật khẩu
+    
+    alt Sai mật khẩu / Email
+        A-->>U: Lỗi 404 / 401 Unauthorized
+    else Hợp lệ
+        A->>A: Generate AccessToken (1h) & RefreshToken (30d)
+        A-->>U: Trả về Token + Thông tin User
+        U->>U: Lưu Token vào LocalStorage / Redux
+    end
+    
+    Note over U,A: Access Protected Routes (e.g. Dashboard)
+    U->>A: GET `/order/get-all` + Header: Bearer Token
+    A->>A: Verify AccessToken signature
+    alt Hợp lệ
+        A-->>U: Data thành công (200 OK)
+    else Hết hạn (Expired)
+        A-->>U: Lỗi 401 Unauthorized (Yêu cầu Refresh / Login lại)
+    end

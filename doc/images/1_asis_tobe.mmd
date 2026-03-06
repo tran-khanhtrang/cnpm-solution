@@ -1,0 +1,17 @@
+flowchart TD
+    subgraph AS-IS ["Quy trình Cũ (Thủ công)"]
+        direction LR
+        A1(Khách Lướt MXH) --> A2(Nhắn tin Messenger mua hàng)
+        A2 --> A3(Admin mở sổ ghi chép)
+        A3 --> A4{Kiểm tra Kho?}
+        A4 -- Hết --> A5[Báo khách Hết hàng]
+        A4 -- Còn --> A6[Chốt đơn & Cuối tháng cộng tay xuất Excel]
+    end
+
+    subgraph TO-BE ["Quy trình Mới (Hệ thống Web N5)"]
+        direction LR
+        B1(Khách lướt Web) --> B2(Thêm Giỏ Hàng & Tự Checkout nhanh)
+        B2 --> B3(Hệ thống Check DB Tồn kho)
+        B3 -- Hết --> B4[Nút Mua Hàng tự động Disable]
+        B3 -- Còn --> B5[Tạo Order & Vẽ biểu đồ Doanh thu Real-time]
+    end
